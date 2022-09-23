@@ -1,4 +1,4 @@
-<div class="container-fluid my-3" style="width: 95%;">
+<div class="container-fluid my-3" style="width: 100%;">
   <h1 class="header-info-upload text-center py-4 mx-auto">Featured Photos</h1>
   <!--<div class="row mx-auto" id="app-card" data-masonry='{"percentPosition": true }' style="position: relative;">
     <template v-for="feature in featured">
@@ -7,11 +7,10 @@
       ></app-cards>
     </template>
     </div>-->
-
-    <div *ngFor="let image of featured">
-      <div class="card my-3 col-sm-6 col-lg-4" style="border: none; background-color: rgba(255,255,255,0)">
-          <img class="card-img" [src]="image.tlink" alt="Error Loading Photo" style="">
-      </div>
+  <div id="image" class="mb-5" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div  *ngFor="let image of featured" class="card my-3 col-sm-6 col-lg-4 px-2" style="border: none; background-color: rgba(255,255,255,0); display: inline;" onload="dodavanje()">
+      <img class="card-img" [src]="image.tlink" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
     </div>
+  </div>
 
 </div>

@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Image } from '../../image';
+import { Image } from "../../../image";
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: 'dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-digital',
+  templateUrl: './digital.component.html',
+  styleUrls: ['./digital.component.css']
 })
-export class DashboardComponent implements OnInit {
-
-  featured: Image[] = [
+export class DigitalComponent implements OnInit {
+  digital: Image[] = [
     {
       tag: 'urba',
       isColor: true,
@@ -28,6 +27,7 @@ export class DashboardComponent implements OnInit {
       olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2984UO.webp?raw=true'
     },
   ];
+
   constructor() { }
 
   ngOnInit(): void {

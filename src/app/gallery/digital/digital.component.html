@@ -1,0 +1,12 @@
+<div class="container-fluid row frosted mt-3 mx-auto compensate-for-scrollbar"
+     style="padding: 1rem; position: sticky; top: 3%; z-index: 1;">
+  <a routerLinkActive="active" routerLink="Gallery" class="header-info-upload hyperlink float-start">Gallery</a>
+  <a routerLinkActive="active" routerLink="Analog" class="header-info-upload hyperlink float-end">Analog</a>
+</div>
+<div class="container-fluid">
+    <div id="image" class="mb-5" style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <div  *ngFor="let image of digital" class="card my-3 col-sm-6 col-lg-4 px-2" style="border: none; background-color: rgba(255,255,255,0); display: inline;" onload="dodavanje()">
+        <img class="card-img" [src]="image.tlink" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
+      </div>
+    </div>
+</div>

@@ -1,1 +1,12 @@
-<p>gallery works!</p>
+<div class="container-fluid my-3" style="width: 100%;">
+  <div id="image" class="mb-5" style="display: flex; flex-wrap: wrap; justify-content: center; ">
+    <app-tagphotos></app-tagphotos>
+  </div>
+    <h1 class="header-info-upload text-center py-4 mx-auto">All Photos</h1>
+
+  <div class="mb-5" style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <div *ngFor="let image of allphotos" class="card my-3 col-sm-6 col-lg-4 px-2" style="border: none; background-color: rgba(255,255,255,0); display: inline-block; height: auto; vertical-align: middle;">
+        <img class="card-img" [src]="image.tlink" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
+      </div>
+  </div>
+</div>

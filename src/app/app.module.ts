@@ -8,6 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { TagphotosComponent } from './gallery/tagphotos/tagphotos.component';
+import { AnalogComponent } from './gallery/analog/analog.component';
+import { DigitalComponent } from './gallery/digital/digital.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { GalleryComponent } from './gallery/gallery.component';
     NavbarComponent,
     DashboardComponent,
     GalleryComponent,
+    AlbumsComponent,
+    TagphotosComponent,
+    AnalogComponent,
+    DigitalComponent,
   ],
   imports: [
     BrowserModule,

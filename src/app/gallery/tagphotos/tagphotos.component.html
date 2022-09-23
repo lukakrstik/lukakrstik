@@ -1,0 +1,10 @@
+<div class="mt-3 mb-0" style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div  *ngFor="let tag of Tags" class="card my-2 col-sm-6 col-lg-4 px-2 " style="border: none; background-color: rgba(255,255,255,0); display: inline; vertical-align: middle;">
+    <a routerLinkActive="active" routerLink="/{{tag.name}}">
+      <img class="card-img" [src]="tag.tlink" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
+      <div class="card-img-overlay d-flex h-100">
+        <h2 class="hyperlink-slide row align-self-center mx-auto display-4" style="font-family:'Montserrat', Sans-serif; font-style: italic; font-weight: bold; color: #000000 ">{{tag.name}}</h2>
+      </div>
+    </a>
+  </div>
+</div>
