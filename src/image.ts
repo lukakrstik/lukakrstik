@@ -1,6 +1,6 @@
 export interface Image {
-  tag: string;
-  isColor: boolean;
+  type: string;
+  feature: boolean;
   tlink: string;
   olink: string;
 }
