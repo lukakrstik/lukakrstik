@@ -30,6 +30,17 @@ import { DigitalComponent } from './gallery/digital/digital.component';
     NgbModule,
     AppRoutingModule,
   ],
+  exports: [
+    AppComponent,
+    ContactComponent,
+    NavbarComponent,
+    DashboardComponent,
+    GalleryComponent,
+    AlbumsComponent,
+    TagphotosComponent,
+    AnalogComponent,
+    DigitalComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
