@@ -340,9 +340,9 @@ body {
 }
 
 body {
-  cursor: url('src/assets/cig2.png'), default;
+  cursor: url('src/assets/L.png'), auto;
 }
 
 a {
-  cursor: url('src/assets/cig3.png'), pointer;
+  cursor: url('src/assets/LL.png'), pointer;
 }
