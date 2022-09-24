@@ -26,19 +26,7 @@ import { DigitalComponent } from './gallery/digital/digital.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
     AppRoutingModule,
-  ],
-  exports: [
-    AppComponent,
-    ContactComponent,
-    NavbarComponent,
-    DashboardComponent,
-    GalleryComponent,
-    AlbumsComponent,
-    TagphotosComponent,
-    AnalogComponent,
-    DigitalComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
