@@ -10,6 +10,9 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.body.classList.add('gradRGB');
   }
-
+  ngOnDestroy(): void {
+    document.body.classList.remove('gradRGB');
+  }
 }

@@ -10,6 +10,9 @@ export class AlbumsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.body.classList.add('bgLine');
   }
-
+  ngOnDestroy(): void {
+    document.body.classList.remove('bgLine');
+  }
 }
