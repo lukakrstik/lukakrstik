@@ -10,6 +10,7 @@ import { DigitalComponent } from "./gallery/digital/digital.component";
 import { AnalogComponent } from "./gallery/analog/analog.component";
 
 const routes: Routes = [
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Contact', component: ContactComponent },
   { path: 'Home', component: DashboardComponent },
   { path: 'Gallery', component: GalleryComponent },

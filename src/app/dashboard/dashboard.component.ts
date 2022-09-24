@@ -9,10 +9,13 @@ import { IMAGES } from "../images";
 })
 export class DashboardComponent implements OnInit {
 
-  featured: Image[] = IMAGES;
+  featured: Image[] = [];
   constructor() { }
 
   ngOnInit(): void {
+    for(let i=0; i<IMAGES.length; i++){
+      if(IMAGES[i].feature) this.featured.push(IMAGES[i]);
+    }
   }
 
 }

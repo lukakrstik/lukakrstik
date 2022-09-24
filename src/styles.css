@@ -9,7 +9,6 @@ body {
   color: #171717;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  font-style: italic;
   font-weight: inherit;
   text-decoration: none;
 }
@@ -325,8 +324,7 @@ body {
   background: url("/assets/Peak3 copy.png"), linear-gradient(-90deg, #ffa6a6, rgb(255, 211, 184), #c59ef5, #ffffff);
   background-size: 100% 100%,800% 800%;
   background-repeat: no-repeat,no-repeat;
-  animation: gradient 10s ease-in infinite;
-  height: 100vh;
+  animation: gradient 20s ease-in-out infinite;
 }
 
 @keyframes gradient {
