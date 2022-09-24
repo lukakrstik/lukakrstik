@@ -338,3 +338,11 @@ body {
     background-position: 0% 50%;
   }
 }
+
+body {
+  cursor: url('src/assets/cig2.png'), default;
+}
+
+a {
+  cursor: url('src/assets/cig3.png'), pointer;
+}

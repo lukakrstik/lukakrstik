@@ -10,7 +10,7 @@ import { IMAGES } from "../images";
 export class DashboardComponent implements OnInit {
 
   featured: Image[] = [];
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     for(let i=0; i<IMAGES.length; i++){
