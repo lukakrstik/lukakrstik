@@ -272,7 +272,7 @@ body {
 .frosted{
   border-radius: 1rem;
   padding: 1.5rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -326,6 +326,7 @@ body {
   background-clip: content-box;
   background-repeat: no-repeat,no-repeat;
   animation: gradient 60s ease-in-out infinite;
+  background-position: bottom;
 }
 
 @keyframes gradient {
@@ -338,10 +339,5 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
-
-.graffiti{
-  background-image: url('assets/Peak3 copy.png');
-  background-repeat: no-repeat;
 }
 
