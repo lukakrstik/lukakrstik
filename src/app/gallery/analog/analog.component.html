@@ -6,8 +6,12 @@
 <div class="container-fluid p-0">
   <div id="image" class="mb-5" style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div  *ngFor="let image of analog" class="card my-3 col-sm-6 col-lg-4 px-2 user-select-none" style="border: none; background-color: rgba(255,255,255,0); display: inline;">
-      <img class="card-img" [src]="image.tlink" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
+      <img class="card-img" [src]="image.tlink" (click)="displayFull(image.olink)" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
     </div>
+  </div>
+
+  <div (click)="closeDisplay($event)" id="cover" style="z-index: 1; display:none; position:fixed; top:0; bottom:0; left:0; right:0; background: rgba(150,150,150,0.9);">
+    <img style="max-height: 95vh; max-width: 95vw; margin: auto;" src="{{linkce}}" class="rounded">
   </div>
 </div>
 

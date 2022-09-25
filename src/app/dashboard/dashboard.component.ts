@@ -18,4 +18,14 @@ export class DashboardComponent implements OnInit {
     }
   }
 
+  linkce:string = "";
+  displayFull(newLink:string) {
+    this.linkce = newLink;
+    document.getElementById('cover')!.style.display = 'flex';
+  }
+  closeDisplay(event:any) {
+    console.log(event);
+    if(event.path[0].tagName != 'IMG')
+      document.getElementById('cover')!.style.display = 'none';
+  }
 }

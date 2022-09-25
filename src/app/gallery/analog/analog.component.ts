@@ -16,5 +16,13 @@ analog: Image[] = [];
       if(IMAGES[i].type === 'analog') this.analog.push(IMAGES[i]);
     }
   }
-
+  linkce:string = "";
+  displayFull(newLink:string) {
+    this.linkce = newLink;
+    document.getElementById('cover')!.style.display = 'flex';
+  }
+  closeDisplay(event:any) {
+    if(event.path[0].tagName != 'IMG')
+      document.getElementById('cover')!.style.display = 'none';
+  }
 }
