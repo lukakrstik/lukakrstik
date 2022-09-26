@@ -311,15 +311,6 @@ body {
   text-decoration: none;
 }
 
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url('/assets/load.gif') 50% 50% no-repeat rgb(255, 255, 255);
-}
 .gradRGB {
   background: url('assets/Peak3 copy.png'), linear-gradient(-90deg, #ffa6a6, rgb(255, 211, 184), #c59ef5, #ffffff);
   background-size: cover,800% 800%;
@@ -341,3 +332,4 @@ body {
   }
 }
 
+html,body { min-height:100%; }
