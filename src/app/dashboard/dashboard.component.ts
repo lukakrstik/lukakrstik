@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
   }
   closeDisplay(event:any) {
     console.log(event);
-    if(event.path[0].tagName != 'IMG')
+    if((event.target as Element).tagName != 'IMG')
       document.getElementById('cover')!.style.display = 'none';
   }
 }

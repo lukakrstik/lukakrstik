@@ -20,7 +20,7 @@ export class GalleryComponent implements OnInit {
     document.getElementById('cover')!.style.display = 'flex';
   }
   closeDisplay(event:any) {
-    if(event.path[0].tagName != 'IMG')
+    if((event.target as Element).tagName != 'IMG')
       document.getElementById('cover')!.style.display = 'none';
   }
 }

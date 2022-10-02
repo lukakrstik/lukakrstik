@@ -1,10 +1,10 @@
 import { Image } from "../image";
 
 export const IMAGES: Image[] = [
-  { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_1290-2.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_1290-2.webp?raw=true' },
+  { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA-1316.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA-1316.webp?raw=true' },
   { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_1299.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_1299.webp?raw=true' },
   { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_1309.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_1309.webp?raw=true' },
-  { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_1342-Pano-positive.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_1342-Pano-positive.webp?raw=true' },
+  { type: 'analog', feature: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_1342-Pano-positive.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_1342-Pano-positive.webp?raw=true' },
   { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_3578-Pano.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_3578-Pano.webp?raw=true' },
   { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_3584-Pano.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_3584-Pano.webp?raw=true' },
   { type: 'analog', feature: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/TA_3591-Pano.webp?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/OA_3591-Pano.webp?raw=true' },
