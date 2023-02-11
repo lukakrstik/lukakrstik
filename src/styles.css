@@ -1,4 +1,6 @@
-@import '~bootstrap/dist/css/bootstrap.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   overflow-x: hidden;
@@ -59,6 +61,7 @@ body {
 .hyperlink{
   transition: color 0.8s;
   color: #171717;
+  text-decoration: none;
 }
 
 .hyperlink:hover {
@@ -69,7 +72,7 @@ body {
 
 .card-img:hover{
   transition: transform 0.5s;
-  transform: scale(1.04);
+  transform: scale(1.01);
 }
 
 .card-img{
@@ -270,11 +273,12 @@ body {
 }
 
 .frosted{
-  border-radius: 1rem;
-  padding: 1.5rem;
+  border: solid #171717 2px;
+  padding-top: 1.5rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 75%;
 }
 
 .bgLine{
@@ -333,3 +337,9 @@ body {
 }
 
 html,body { min-height:100%; }
+
+@media only screen and (max-width: 600px) {
+  .frosted {
+    width: 100%;
+  }
+}

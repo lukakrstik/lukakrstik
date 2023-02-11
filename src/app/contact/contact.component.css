@@ -1,0 +1,4 @@
+.contactBtn:hover {
+  background-color: #2d966b;
+  transition: background-color 1s;
+}

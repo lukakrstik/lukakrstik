@@ -1,12 +1,11 @@
 <div class="container-fluid my-3 mx-0 px-0">
-  <h1 class="header-info-upload text-center py-4 mx-auto user-select-none">Featured Photos</h1>
-
-  <div id="image" class="mb-5" style="display: flex; flex-wrap: wrap; justify-content: center;">
-      <div *ngFor="let image of featured" class="card my-3 col-sm-6 col-lg-4 px-2 user-select-none" style="border: none; background-color: rgba(255,255,255,0); display: inline;">
-        <img class="card-img" [src]="image.tlink" (click)="displayFull(image.tlink)" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0); object-fit: cover;">
-      </div>
+  <div>
+    <h1>Luka Krstikj</h1>
   </div>
-  <div (click)="closeDisplay($event)" id="cover" style="display:none; position:fixed; top:0; bottom:0; left:0; right:0; background: rgba(255,255,255,0.9);">
-    <img style="max-height: 95vh; max-width: 95vw; margin: auto" src="{{linkce}}" class="rounded">
+
+  <div>
+    <a class="d-inline-block text-8xl">PHOTO </a>
+    <h1 class="d-inline-block text-8xl">/</h1>
+    <a class="d-inline-block text-8xl">DEV</a>
   </div>
 </div>
