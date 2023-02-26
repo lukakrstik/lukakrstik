@@ -338,7 +338,7 @@ body {
 
 html,body { min-height:100%; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .frosted {
     width: 100%;
   }
