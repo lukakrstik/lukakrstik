@@ -17,6 +17,7 @@
 
 .fullpage{
   min-height: 80vh;
+  overflow: hidden;
 }
 
 .titleWdesc {
