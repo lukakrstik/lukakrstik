@@ -11,6 +11,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { TagphotosComponent } from './gallery/tagphotos/tagphotos.component';
 import { AnalogComponent } from './gallery/analog/analog.component';
 import { DigitalComponent } from './gallery/digital/digital.component';
+import { DevComponent } from './dev/dev.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DigitalComponent } from './gallery/digital/digital.component';
     TagphotosComponent,
     AnalogComponent,
     DigitalComponent,
+    DevComponent,
   ],
   imports: [
     BrowserModule,

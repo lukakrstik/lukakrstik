@@ -1,12 +1,25 @@
-<div class="sticky-top header-info">
-  <div class="border-b-2 border-krstic text-center titleNav frostedNav">
-    <img src="../../assets/logo.svg" style="width: 35px" class="mx-auto pt-2">
+<div class="sticky-top header-info text-white">
+  <div class="flex flex-row justify-content-between w-full px-2 bg-krstic pt-1">
+    <h1 style="font-size: 1rem" class="pt-1 text-left">LUKA KRSTIKJ</h1>
+    <h1 style="font-size: 1rem" class="pt-1 text-right">VS 300</h1>
   </div>
-  <div class="flex flex-col navbarContainer">
-    <a class="border-b-2 border-r-2 frostedNav basis-1/4 border-krstic buttons grow hyperlink" routerLinkActive="active" routerLink="Home">HOME</a>
-    <a class="border-b-2 border-r-2 frostedNav basis-1/4 border-krstic buttons grow hyperlink" routerLinkActive="active" routerLink="Home">DEV</a>
-    <a class="border-b-2 border-r-2 frostedNav basis-1/4 border-krstic buttons grow hyperlink" routerLinkActive="active" routerLink="Gallery">PHOTO</a>
-    <a class="border-r-2 frostedNav basis-1/4 border-krstic buttons grow hyperlink" routerLinkActive="active" routerLink="Contact">CONTACT</a>
+  <div class="flex flex-row navbarContainer text-white justify-content-evenly bg-krstic border-t-2 border-white">
+    <div class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-evenly btnNav">
+      <a class="hyperlinkNav" routerLinkActive="active" routerLink="Home">HOME</a>
+      <img [src]="router.url === '/Home' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
+    </div>
+    <div class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-evenly">
+      <a class="hyperlinkNav" routerLinkActive="active" routerLink="Dev">DEV</a>
+      <img [src]="router.url === '/Dev' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
+    </div>
+    <div class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-evenly">
+      <a class="hyperlinkNav" routerLinkActive="active" routerLink="Gallery">PHOTO</a>
+      <img [src]="router.url === '/Gallery' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
+    </div>
+    <div class="flex flex-row flex-wrap basis-1/4 border-b-2 border-white justify-content-evenly">
+      <a class="hyperlinkNav" routerLinkActive="active" routerLink="Contact">CONTACT</a>
+      <img [src]="router.url === '/Contact' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
+    </div>
   </div>
 </div>
 

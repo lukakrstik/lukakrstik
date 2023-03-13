@@ -1,54 +1,34 @@
-.buttons {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  user-select: none;
-  width: 40px;
-  text-align: center;
-  transition: border-bottom-width 0.3s linear;
-  padding-right: 5px;
+img{
+  height: 1.5rem;
+  border: solid white 2px;
+  align-self: center;
 }
-.buttons:hover {
-  border-bottom-width: 10px;
+
+.hyperlinkNav{
+  transition: color 0.8s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  align-self: center;
 }
+
+.hyperlinkNav:hover {
+  color: #2d966b;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  align-self: center;
+}
+
+.btnNav {
+  padding: 2px;
+}
+
 .navbarContainer {
-  height: 90vh;
-  float: left;
-  position: sticky;
-  z-index: 1;
-}
-
-@media only screen and (max-width: 640px) {
-  .navbarContainer {
-    height: 10%;
-    width: 100%;
-    float: none;
-    flex-direction: row;
-  }
-  .buttons {
-    writing-mode: horizontal-tb;
-    text-orientation: mixed;
-    user-select: none;
-    height: 55px;
-    text-align: center;
-    transition: border-bottom-width 0.3s linear;
-    padding-top: 13px;
-    font-size: 1.1rem;
-  }
-  .buttons:last-of-type{
-    border-bottom: solid #171717 2px;
-    border-right: none;
-    transition: border-bottom-width 0.3s linear;
-  }
-  .buttons:last-of-type:hover{
-    border-bottom-width: 10px;
-  }
-}
-
-.frostedNav{
-  background-image: linear-gradient(90deg, rgba(180, 180, 180,0.3), rgba(255, 255, 255, 0.5));
-  backdrop-filter: blur(10px);
-}
-
-.titleNav{
-  height: 10vh;
+  overflow: hidden;
 }
