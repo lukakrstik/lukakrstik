@@ -8,14 +8,14 @@ body {
 }
 
 .header-info {
-  color: #171717;
+  color: #FFF;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: inherit;
   text-decoration: none;
 }
 .header-info-italic {
-  color: #171717;
+  color: #FFF;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -51,7 +51,7 @@ body {
 }
 
 .header-info-b {
-  color: #171717;
+  color: #FFF;
   font-size: 2.0rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -273,10 +273,10 @@ body {
 }
 
 .frosted{
-  border: solid #171717 2px;
+  border: solid #FFF 2px;
   padding-top: 1.5rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
-  backdrop-filter: blur(10px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 23, 23,0.7));
+  backdrop-filter: blur(30px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 75%;
 }
@@ -316,7 +316,7 @@ body {
 }
 
 .gradRGB {
-  background: url('assets/Peak3 copy.png'), linear-gradient(-90deg, #ffa6a6, rgb(255, 211, 184), #c59ef5, #ffffff);
+  background: url('assets/Peak3 copy.png'), url("assets/synth.gif");
   background-size: cover,800% 800%;
   background-clip: content-box;
   background-repeat: no-repeat,no-repeat;
