@@ -1,0 +1,33 @@
+.img {
+  height: 2rem;
+}
+.gifContainer{
+  background-image: url("../../assets/synth.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.line {
+  height: 2px;
+  width: 50px;
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.fullpage{
+  min-height: 80vh;
+}
+
+.titleWdesc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.frostedDash{
+  border: solid #171717 2px;
+  width: 120%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 23, 23,0.7));
+  backdrop-filter: blur(10px);
+}

@@ -343,3 +343,6 @@ html,body { min-height:100%; }
     width: 100%;
   }
 }
+body{
+  background-image: linear-gradient(#171717,#171717);
+}

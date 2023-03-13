@@ -9,6 +9,7 @@ import { AlbumsComponent } from "./albums/albums.component";
 import { DigitalComponent } from "./gallery/digital/digital.component";
 import { AnalogComponent } from "./gallery/analog/analog.component";
 import { DevComponent } from "./dev/dev.component";
+import {ExhibitComponent} from "./exhibit/exhibit.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'Digital', component: DigitalComponent },
   { path: 'Analog', component: AnalogComponent },
   { path: 'Dev', component: DevComponent },
+  { path: 'Exhibit', component: ExhibitComponent},
   { path: '**', pathMatch:'full', component: DashboardComponent}
 ];
 
