@@ -14,12 +14,6 @@ img{
   text-align: center;
 }
 
-.hyperlinkNav:hover {
-  color: #2d966b;
-  text-decoration: none;
-  transition: color 0.4s;
-}
-
 .line {
   height: 2px;
   width: 30px;
