@@ -1,5 +1,5 @@
 <div class="container-fluid fullpage mx-0 pt-8 titleWdesc">
-  <div class="flex-row flex flex-wrap justify-content-evenly mb-8 px-0 md:px-4" *ngFor=" let project of allprojects">
+  <div class="flex-row flex flex-wrap justify-content-evenly mb-8 px-0 md:mx-4" *ngFor=" let project of allprojects">
     <div class="flex flex-column justify-content-start mb-4 basis-full md:basis-1/2 pr-2">
       <div class="flex flex-row flex-wrap border-2 border-white w-fit">
         <h1 class="w-fit text-white px-2">{{project.name}}</h1>
@@ -12,6 +12,6 @@
         <a [href]="project.gitlink" class="text-decoration-none text-krstic"><h5 class="bg-white p-2">Github</h5></a>
       </div>
     </div>
-    <img class="border-4 border-white basis-full md:basis-1/2" [src]="project.img">
+    <img class="border-2 border-white basis-full md:basis-1/2" [src]="project.img">
   </div>
 </div>
