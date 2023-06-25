@@ -3,31 +3,31 @@
     <h1 style="font-size: 1rem" class="pt-1 text-left">LUKA KRSTIKJ</h1>
     <h1 style="font-size: 1rem" class="pt-1 text-right">VC 10.317</h1>
   </div>
-  <div class="flex flex-row navbarContainer text-white justify-content-evenly frostedNav border-t-2 border-white">
-    <div routerLinkActive="active" routerLink="Home" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-center p-2">
+  <div class="flex flex-row navbarContainer text-white justify-content-evenly frostedNav border-t-2 border-white flex-sm-shrink-1">
+    <div routerLinkActive="active" routerLink="Home" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-center py-2">
       <a class="hyperlinkNav">HOME</a>
-      <div class="flex flex-row">
+      <div class="flex flex-row navLight">
        <div class="line"></div>
         <img [src]="router.url === '/Home' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
       </div>
     </div>
-    <div routerLinkActive="active" routerLink="Dev" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-center p-2">
-      <a class="hyperlinkNav">DEV</a>
-      <div class="flex flex-row">
+    <div routerLinkActive="active" routerLink="Dev" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-center py-2">
+      <a class="hyperlinkNav w-fit">DEV</a>
+      <div class="flex flex-row w-fit navLight">
         <div class="line"></div>
         <img [src]="router.url === '/Dev' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
       </div>
     </div>
-    <div routerLinkActive="active" routerLink="Gallery" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-center p-2">
+    <div routerLinkActive="active" routerLink="Gallery" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-r-2 border-white justify-content-center py-2">
       <a class="hyperlinkNav">PHOTO</a>
-      <div class="flex flex-row">
+      <div class="flex flex-row navLight">
         <div class="line"></div>
         <img [src]="router.url === '/Gallery' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
       </div>
     </div>
-    <div routerLinkActive="active" routerLink="Contact" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-white justify-content-center p-2">
+    <div routerLinkActive="active" routerLink="Contact" class="flex flex-row flex-wrap basis-1/4 border-b-2 border-white justify-content-center py-2">
       <a class="hyperlinkNav">CONTACT</a>
-      <div class="flex flex-row">
+      <div class="flex flex-row navLight">
         <div class="line"></div>
         <img [src]="router.url === '/Contact' ? '../../assets/Btn.jpg' : '../../assets/Btn-2.jpg'">
       </div>
