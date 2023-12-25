@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   age:number = 0;
-  date:Date = new Date()
+  dateBirth:Date = new Date("10/10/2002")
   constructor() { }
   ngOnInit(): void {
     document.body.classList.add('gradRGB');
-    if (this.date.getMonth() >= 10) this.age = this.date.getFullYear() - 2002;
-    else this.age = this.date.getFullYear()-2003;
+    var diff = Date.now() - this.dateBirth.getTime();
+    var convert = new Date(diff)
+    this.age = Math.abs(convert.getUTCFullYear()-1970);
   }
   ngOnDestroy(): void {
     document.body.classList.remove('gradRGB');
