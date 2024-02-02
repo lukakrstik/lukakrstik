@@ -2,3 +2,9 @@
   background-color: #8cac00;
   transition: background-color 1s;
 }
+
+@media only screen and (max-width: 768px) {
+  .contactBtn {
+    border-right: none;
+  }
+}

@@ -11,11 +11,13 @@ export class ContactComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
     document.body.classList.add('gradRGB');
+    document.body.classList.remove('normalBG');
     var diff = Date.now() - this.dateBirth.getTime();
     var convert = new Date(diff)
     this.age = Math.abs(convert.getUTCFullYear()-1970);
   }
   ngOnDestroy(): void {
     document.body.classList.remove('gradRGB');
+    document.body.classList.add('normalBG');
   }
 }

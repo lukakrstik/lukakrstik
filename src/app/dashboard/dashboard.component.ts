@@ -9,23 +9,14 @@ import { IMAGES } from "../images";
 })
 export class DashboardComponent implements OnInit {
 
-  featured: Image[] = [];
   constructor() {}
 
   ngOnInit(): void {
-    for(let i=0; i<IMAGES.length; i++){
-      if(IMAGES[i].feature) this.featured.push(IMAGES[i]);
-    }
+    document.body.classList.add('glitchBG');
+    document.body.classList.remove('normalBG');
   }
-
-  linkce:string = "";
-  displayFull(newLink:string) {
-    this.linkce = newLink;
-    document.getElementById('cover')!.style.display = 'flex';
-  }
-  closeDisplay(event:any) {
-    console.log(event);
-    if((event.target as Element).tagName != 'IMG')
-      document.getElementById('cover')!.style.display = 'none';
+  ngOnDestroy(){
+    document.body.classList.add('normalBG');
+    document.body.classList.remove('glitchBG');
   }
 }

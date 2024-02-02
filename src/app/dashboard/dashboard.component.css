@@ -3,6 +3,7 @@
 }
 .gifContainer{
   background-image: url("../../assets/synth.gif");
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
 }

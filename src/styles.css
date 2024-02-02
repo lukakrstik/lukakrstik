@@ -116,7 +116,6 @@ body {
   color: #171717;
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
-  font-style: italic;
   text-decoration: none;
 }
 
@@ -315,9 +314,9 @@ body {
 }
 
 .gradRGB {
-  background-blend-mode: soft-light;
-  background: url('assets/Peak3 copy.png'), #171717;
-  background-size: cover,800% 800%;
+  background-blend-mode: color-burn;
+  background: url('assets/bgnew.png'), url("assets/img17272.gif");
+  background-size: cover,1000% 1000%;
   background-clip: content-box;
   background-repeat: no-repeat,no-repeat;
   animation: gradient 60s ease-in-out infinite;
@@ -343,6 +342,14 @@ html,body { min-height:100%; }
     width: 100%;
   }
 }
-body{
-  background-image: linear-gradient(#171717,#171717);
+
+.normalBG {
+  background-color: #171717;
+}
+
+.glitchBG {
+  background-image: url("/assets/img17272.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
 }
