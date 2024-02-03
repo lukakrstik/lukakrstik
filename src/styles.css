@@ -314,8 +314,9 @@ body {
 }
 
 .gradRGB {
-  background-blend-mode: color-dodge;
+  background-blend-mode: screen;
   background: url("assets/bgnewG.gif"), url('assets/bgnew.png');
+  backdrop-filter: saturate(55%);
   background-size: cover;
   background-clip: content-box;
   background-repeat: no-repeat,no-repeat;
@@ -342,7 +343,9 @@ html,body { min-height:100%; }
     width: 100%;
   }
 }
-
+body{
+  height: 100vh;
+}
 .normalBG {
   background-color: #171717;
 }
