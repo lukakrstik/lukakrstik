@@ -2,7 +2,9 @@
   <div class="flex-row flex flex-wrap justify-content-evenly mb-8 px-0 lg:mx-4" *ngFor=" let project of allprojects">
     <div class="flex flex-column justify-content-center mb-4 basis-full lg:basis-1/2 pr-2 shrink-0 grow-0 flex-wrap">
       <div class="flex flex-row flex-wrap border-2 border-white w-fit">
-        <h1 class="w-fit text-white p-2">{{project.name}}</h1>
+        <div>
+          <h2 class="flex flex-column justify-content-center w-fit text-white pt-2 px-2">{{project.name}}</h2>
+        </div>
         <div class="bg-white flex flex-column justify-content-center">
           <h3 class="text-krstic w-fit px-2 text-center align-self-center pt-2">{{project.date}}</h3>
         </div>
