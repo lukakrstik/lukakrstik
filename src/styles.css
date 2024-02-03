@@ -314,9 +314,9 @@ body {
 }
 
 .gradRGB {
-  background-blend-mode: color-burn;
-  background: url('assets/bgnew.png'), url("assets/img17272.gif");
-  background-size: cover,1000% 1000%;
+  background-blend-mode: color-dodge;
+  background: url("assets/bgnewG.gif"), url('assets/bgnew.png');
+  background-size: cover;
   background-clip: content-box;
   background-repeat: no-repeat,no-repeat;
   animation: gradient 60s ease-in-out infinite;
