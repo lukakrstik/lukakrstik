@@ -70,8 +70,8 @@ body {
 }
 
 .card-img:hover{
-  transition: transform 0.5s;
-  transform: scale(1.01);
+  transition: 0.1s;
+  border-width: 3px;
 }
 
 .card-img{
@@ -344,7 +344,7 @@ html,body { min-height:100%; }
   }
 }
 body{
-  height: 100vh;
+  height: max-content;
 }
 .normalBG {
   background-color: #171717;
