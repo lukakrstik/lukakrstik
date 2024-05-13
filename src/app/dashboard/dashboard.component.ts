@@ -12,11 +12,11 @@ export class DashboardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    document.body.classList.add('glitchBG');
+    document.body.classList.add('newBG');
     document.body.classList.remove('normalBG');
   }
   ngOnDestroy(){
     document.body.classList.add('normalBG');
-    document.body.classList.remove('glitchBG');
+    document.body.classList.remove('newBG');
   }
 }

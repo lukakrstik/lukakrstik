@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: Rondo;
+  src: url("/assets/Rondo.woff");
+}
 
 body {
   overflow-x: hidden;
@@ -70,8 +74,8 @@ body {
 }
 
 .card-img:hover{
-  transition: 0.1s;
-  border-width: 3px;
+  transition: 0.2s;
+  border-width: 6px;
 }
 
 .card-img{
@@ -355,4 +359,18 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
+}
+
+.newBG {
+  background-image: url("/assets/img17272(3).gif"), url("/assets/bgnewFix.gif"), linear-gradient(#171717, #171717);
+  background-size: contain;
+  background-repeat: repeat, repeat;
+  background-blend-mode: difference, difference, normal;
+}
+
+.header-Rondo {
+  font-size: 4vmin;
+  font-family: 'Rondo';
+  text-decoration: none;
+  letter-spacing: 6px;
 }
