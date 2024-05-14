@@ -3,7 +3,7 @@
 }
 .gifContainer{
   background-image: url("../../assets/ahahah.gif");
-  background-blend-mode: overlay;
+  background-blend-mode: exclusion;
   background-repeat: no-repeat;
   background-size: cover;
 }
