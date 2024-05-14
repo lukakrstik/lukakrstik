@@ -362,10 +362,10 @@ body{
 }
 
 .newBG {
-  background-image: url("/assets/img17272(3).gif"), url("/assets/bgnewFix.gif"), linear-gradient(#171717, #171717);
-  background-size: contain;
-  background-repeat: repeat, repeat;
-  background-blend-mode: difference, difference, normal;
+  background-image: url("/assets/ocicrop.gif") ,url("/assets/img17272(3).gif"), url("/assets/bgnewFix.gif"), linear-gradient(#171717, #171717);
+  background-size: initial;
+  background-repeat: repeat ,repeat, repeat;
+  background-blend-mode: difference ,difference, difference, normal;
 }
 
 .header-Rondo {

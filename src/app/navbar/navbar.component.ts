@@ -7,10 +7,19 @@ import {Router, RouterModule} from "@angular/router";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  counter: number;
 
-  constructor(public router: Router) { }
+
+
+  constructor(public router: Router) {
+    this.counter = 0
+  }
 
   ngOnInit(): void {
+    setInterval(() => {
+      if(this.counter < 9999)
+      this.counter += 1;
+    },1000)
   }
 
 }
