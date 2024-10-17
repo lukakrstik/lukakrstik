@@ -1,16 +1,78 @@
-<div class="container-fluid fullpage mx-0 pt-0 flex flex-row flex-wrap justify-content-evenly titleWdesc">
+<div class="lg:h-[100vh] flex flex-col CRT select-none">
+    <div class="teletext w-full text  flex justify-end h-[25px]">
+      <div class="h-[25px] w-max checkered flex-1"></div>
+      <div class="h-[25px] bg-white text-black flex flex-col justify-center">
+        <h1 class="text-sm h-fit m-0 px-2" id="clock">00:00:00</h1>
+      </div>
+      <div class="h-[25px] bg-white text-black flex flex-col justify-center">
+        <h1 class="text-sm h-fit m-0 px-2">v[3.01]</h1>
+      </div>
+    </div>
+    <div class="titleWdesc text-white flex justify-between bg-[blue]">
+      <!--<h1 class="w-fit px-2">LUKA KRSTIKJ . . .</h1>
+      <h1 class="w-fit teletext bg-black text-green px-2">CH0</h1>-->
+      <pre class=" w-full pt-2 mb-0 text-[0.68rem] md:text-[0.8rem]">
+    ▄▄▌ ▄• ▄▄ •▄ ▄▄▄·     ▄ •▄▄▄▄ .▄▄ ▄▄▄▄▪ ▄ •▄ ▐▄▄▄
+    ██• █ ███▌▄▌▐█ ▀█     █▌▄▌▀▄ █▐█ ▀•██ ███▌▄▌▪ ·██
+    ██  █▌▐█▐▀▀▄▄█▀▀█     ▐▀▀▄▐▀▀▄▄▀▀▀█▐█.▐█▐▀▀▄▪▄ ██
+    ▐█▌▐▐█▄█▐█.█▐█  ▐▌    ▐█.█▐█•█▐█▄ ▐▐█▌▐█▐█.█▐▌▐█▌
+    .▀▀▀ ▀▀▀·▀  ▀▀  ▀     ·▀  .▀  ▀▀▀▀▀▀▀▀▀▀·▀  ▀▀▀▀•
+      </pre>
+      <div class="flex">
+        <div class="w-[12px] md:w-[35px] bg-[gray]"></div>
+        <div class="w-[12px] md:w-[35px] bg-[yellow]"></div>
+        <div class="w-[12px] md:w-[35px] bg-[cyan]"></div>
+        <div class="w-[12px] md:w-[35px] bg-[limegreen]"></div>
+        <div class="w-[12px] md:w-[35px] bg-[magenta]"></div>
+        <div class="w-[12px] md:w-[35px] bg-[red]"></div>
+        <div class="w-[12px] md:w-[35px] bg-[blue]"></div>
+      </div>
+    </div>
+    <div class="flex-1 mx-0 pt-0 flex flex-col lg:flex-row wrap-1 justify-evenly teletext lg:overflow-hidden jittertwo">
+      <div class="lg:basis-1/2 flex flex-col justify-center lg:px-32 text-white">
+        <pre class="bg-white text-krstic w-full lg:w-75 text-center mb-8">
+    ▗▄▄▖ ▗▄▄▖  ▗▄▖  ▗▄▄▖▗▄▄▖  ▗▄▖ ▗▖  ▗▖
+    ▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌ ▐▌▐▌ ▐▌▐▛▚▞▜▌
+    ▐▛▀▘ ▐▛▀▚▖▐▌ ▐▌▐▌▝▜▌▐▛▀▚▖▐▛▀▜▌▐▌  ▐▌
+    ▐▌   ▐▌ ▐▌▝▚▄▞▘▝▚▄▞▘▐▌ ▐▌▐▌ ▐▌▐▌  ▐▌
+      </pre>
+          <div class="flex flex-col justify-center w-full lg:w-75 px-2 navCH">
+            <div routerLinkActive="active" routerLink="/dev" (mouseover)="hover('1', 'FDev.gif','<Projects> /// <Apps>')" class="flex justify-between">
+              <h1 class="text-[yellow]">Dev</h1>
+              <h1>1</h1>
+            </div>
+            <div routerLinkActive="active" routerLink="/art" (mouseover)="hover('2', 'ahahah.gif','Photos *** Visuals')" class="flex justify-between">
+              <h1 class="text-[yellow]">Art</h1>
+              <h1>2</h1>
+            </div>
+            <div (mouseover)="hover('934', 'konj.gif','NO FURTHERFURTHERFURTHER INFORMATION')" class="flex justify-between">
+              <h1 class="text-[yellow]">???</h1>
+              <h1>934</h1>
+            </div>
+            <div routerLinkActive="active" routerLink="/about-me" (mouseover)="hover('10', 'Gsynth.gif','About-Me &&& 07@Contact.com')" class="flex justify-between">
+              <h1 class="text-[yellow]">About Me</h1>
+              <h1>10</h1>
+            </div>
+          </div>
+          <h1 class="text-[1rem] bg-[magenta] text-white text-center mt-8 w-full lg:w-75">The world is in your hands.</h1>
+      </div>
 
-  <div style="align-self: center" class="text-white py-8">
-    <h2 class="text-white w-fit p-2 border-b-2 border-l-2 border-white mb-8">46414C41</h2>
-    <h1 class="text-5xl">[HOMEPAGE]</h1>
-    <p>50686F746F2050686F746F2050686<br>F746F204164642050686F746F</p>
-    <div class="flex flex-row">
-      <h2 routerLinkActive="active" routerLink="/Gallery" class="text-krstic bg-white w-fit border-white p-2 mt-8">Exit? -></h2>
+      <div class="text-white lg:basis-1/2 relative shrink-0 flex flex-col justify-center">
+        <img class="mix-blend-difference flicker" id="tv" src="assets/ezgif.com-optimize-2.gif">
+        <h1 id="ch" class="text-[limegreen] w-fit absolute text-5xl right-10 top-10 hidden"></h1>
+        <div class="absolute text-center jitter">
+          <h1 class="bg-black text-[limegreen] w-fit text-4xl">{{this.text[0]}}</h1>
+          <h1 class="bg-black text-[limegreen] w-fit text-4xl">{{this.text[1]}}</h1>
+          <h1 class="bg-black text-[limegreen] w-fit text-4xl">{{this.text[2]}}</h1>
+        </div>
+
+      </div>
 
     </div>
   </div>
-  <div class="line"></div>
-  <div class="position-relative w-fit gifContainer border-2 border-white my-4 align-self-center flex flex-column">
-    <h5 class="frostedDash  m-32 md:m-64 p-4 text-white border-white">No Remarks</h5>
+  <div class="nBG teletext text-center flex flex-col justify-center pt-2">
+    <h5>© 2024 Luka Krstikj</h5>
+    <div class="flex justify-center">
+      <img src="assets/konj.gif" class="w-[50px]">
+    </div>
   </div>
-</div>

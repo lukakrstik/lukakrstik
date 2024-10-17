@@ -1,0 +1,24 @@
+.SynthBG {
+  background-image: url("../../assets/Gsynth.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+video{
+  object-fit: cover;
+}
+
+.descText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .textBox {
+    border-bottom-width: 0.125rem;
+    border-right: none;
+  }
+
+}
+

@@ -12,15 +12,15 @@ import { DevComponent } from "./dev/dev.component";
 import {ExhibitComponent} from "./exhibit/exhibit.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/Home', pathMatch: 'full' },
-  { path: 'Contact', component: ContactComponent },
-  { path: 'Home', component: DashboardComponent },
-  { path: 'Gallery', component: GalleryComponent },
-  { path: 'Albums', component: AlbumsComponent },
-  { path: 'Digital', component: DigitalComponent },
-  { path: 'Analog', component: AnalogComponent },
-  { path: 'Dev', component: DevComponent },
-  { path: 'Exhibit', component: ExhibitComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'about-me', component: ContactComponent },
+  { path: 'home', component: DashboardComponent },
+  { path: 'art', component: GalleryComponent },
+  { path: 'albums', component: AlbumsComponent },
+  { path: 'digital', component: DigitalComponent },
+  { path: 'analog', component: AnalogComponent },
+  { path: 'dev', component: DevComponent },
+  { path: 'exhibit', component: ExhibitComponent},
   { path: '**', pathMatch:'full', component: DashboardComponent}
 ];
 

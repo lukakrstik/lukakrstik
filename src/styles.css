@@ -6,6 +6,11 @@
   src: url("/assets/Rondo.woff");
 }
 
+@font-face {
+  font-family: Teletext;
+  src: url("/assets/european_teletext/EuropeanTeletextNuevo.ttf");
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -355,10 +360,9 @@ body{
 }
 
 .glitchBG {
-  background-image: url("/assets/img17272.gif");
+  background-image: url("/assets/glitch171717SC.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
 }
 
 .newBG {
@@ -366,6 +370,11 @@ body{
   background-size: initial;
   background-repeat: repeat ,repeat, repeat;
   background-blend-mode: difference ,difference, difference, normal;
+}
+.nBG {
+  background-color: blue;
+  color: yellow;
+  font-size: 0.1rem;
 }
 
 .header-Rondo {
