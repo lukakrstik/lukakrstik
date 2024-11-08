@@ -57,7 +57,7 @@
   background-color: blue;
   color: yellow;
   mix-blend-mode: difference;
-  box-shadow: 0 0 0.4rem 0.2rem blue ;
+  box-shadow: 0 0 0.3rem 0.15rem blue ;
   transition: all ease-in-out 300ms
 }
 
@@ -72,7 +72,7 @@
 .CRT::before {
   mix-blend-mode: difference;
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -148,8 +148,6 @@
 
 .glow{
   background-color: inherit;
-  filter: blur(0.6px);
-  -webkit-filter: blur(0.6px);
   text-shadow: currentColor 0 0 0.1rem;
   transition: all ease-in-out 300ms
 }
@@ -157,6 +155,4 @@
 #tv{
   aspect-ratio: 1/1.04;
   object-fit: fill;
-  filter: blur(1.6px);
-  -webkit-filter: blur(1.6px);
 }
