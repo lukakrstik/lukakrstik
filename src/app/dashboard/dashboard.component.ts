@@ -23,6 +23,8 @@ export class DashboardComponent implements OnInit {
     // @ts-ignore
     image.src = "assets/" + asset;
     // @ts-ignore
+    image.play()
+    // @ts-ignore
     chEl.innerText = "CH" + ch;
     // @ts-ignore
     chEl.style.display = "block"
