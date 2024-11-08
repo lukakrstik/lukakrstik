@@ -54,6 +54,8 @@ export class DashboardComponent implements OnInit {
     let image = document.getElementById("tv")
     // @ts-ignore
     image.src = "assets/homeN.mp4"
+    // @ts-ignore
+    image.play();
   }
   ngOnDestroy() {
     document.body.classList.add('normalBG');
