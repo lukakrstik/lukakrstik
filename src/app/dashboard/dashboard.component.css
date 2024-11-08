@@ -57,6 +57,8 @@
   background-color: blue;
   color: yellow;
   mix-blend-mode: difference;
+  box-shadow: 0 0 0.4rem 0.2rem blue ;
+  transition: all ease-in-out 300ms
 }
 
 
@@ -70,12 +72,12 @@
 .CRT::before {
   mix-blend-mode: difference;
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0.05) 50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0.04) 50%);
   z-index: 1;
   background-size: 150% 4px, 10px 150%;
   pointer-events: none;
@@ -102,7 +104,7 @@
     transform: translateY(1px);
   }
   30%{
-    transform: translateX(1px) translateY(0px);
+    transform: translateX(2px) translateY(0px);
   }
   50% {
     transform: translateX(0px) translateY(1px);
@@ -138,8 +140,23 @@
   animation: blur 45ms infinite;
 }
 
-#ch{
+#ch,.ch{
   filter: blur(0.5px);
-  text-shadow: 0 0 30px lime;
-  opacity: 75%;
+  text-shadow: lime 0 0 0.3rem;
+  opacity: 82%;
+}
+
+.glow{
+  background-color: inherit;
+  filter: blur(0.6px);
+  -webkit-filter: blur(0.6px);
+  text-shadow: currentColor 0 0 0.1rem;
+  transition: all ease-in-out 300ms
+}
+
+#tv{
+  aspect-ratio: 1/1.04;
+  object-fit: fill;
+  filter: blur(1.6px);
+  -webkit-filter: blur(1.6px);
 }

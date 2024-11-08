@@ -10,8 +10,11 @@ import {Router, RouterModule} from "@angular/router";
 })
 export class DashboardComponent implements OnInit {
   private clockInterval: any;
+  private programInterval: any;
   private channelInterval: any;
   public text: string[] = [];
+  public programArray: string[] = ["PROGRAM", "P^/GA!-", ">R!/RAM", ">!->#>A/","!!O>#$>"]
+  public program: string = ""
   hover(ch: string, asset: string, text: string){
     console.log("in")
     let image = document.getElementById("tv")
@@ -33,7 +36,12 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit() {
-
+    this.program = "PROGRAM"
+    let i = 0;
+    this.programInterval = setInterval(() => {
+      this.program = this.programArray[i%this.programArray.length]
+      i++;
+    },400)
     document.body.classList.add('glitchBG');
     document.body.classList.remove('newBG');
     this.clockInterval = setInterval(()=>{
@@ -46,5 +54,7 @@ export class DashboardComponent implements OnInit {
     document.body.classList.add('normalBG');
     document.body.classList.remove('glitchBG');
     clearInterval(this.clockInterval)
+    clearTimeout(this.channelInterval)
+    clearTimeout(this.programInterval)
   }
 }
