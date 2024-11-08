@@ -51,11 +51,6 @@ export class DashboardComponent implements OnInit {
       // @ts-ignore
       document.getElementById('clock').innerHTML=`${currentTime}`;
     }, 1000);
-    let image = document.getElementById("tv")
-    // @ts-ignore
-    image.src = "assets/homeN.mp4"
-    // @ts-ignore
-    image.play();
   }
   ngOnDestroy() {
     document.body.classList.add('normalBG');
