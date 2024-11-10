@@ -70,9 +70,9 @@
 
 }
 .CRT::before {
-  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -81,6 +81,7 @@
   z-index: 1;
   background-size: 150% 4px, 10px 150%;
   pointer-events: none;
+
 }
 
 
@@ -155,4 +156,9 @@
 #tv{
   aspect-ratio: 1/1.04;
   object-fit: fill;
+}
+
+.navCH{
+  cursor: url("src/assets/cursor32.png") default;
+  pointer-events: auto;
 }

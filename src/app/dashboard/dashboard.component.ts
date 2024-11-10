@@ -38,8 +38,6 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit() {
-
-
     this.program = "PROGRAM"
     let i = 0;
     this.programInterval = setInterval(() => {
@@ -53,6 +51,9 @@ export class DashboardComponent implements OnInit {
       // @ts-ignore
       document.getElementById('clock').innerHTML=`${currentTime}`;
     }, 1000);
+    let video = document.getElementById("tv")
+    // @ts-ignore
+    video.play()
   }
   ngOnDestroy() {
     document.body.classList.add('normalBG');
