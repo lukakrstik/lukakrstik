@@ -27,11 +27,6 @@
   text-decoration: none;
 }
 
-.teletext{
-  font-family: 'Teletext', sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-}
 
 .frostedDash{
   border: solid #171717 2px;
@@ -148,7 +143,6 @@
 }
 
 .glow{
-  background-color: inherit;
   text-shadow: currentColor 0 0 0.1rem;
   transition: all ease-in-out 300ms
 }
@@ -161,4 +155,15 @@
 .navCH{
   cursor: url("src/assets/cursor32.png") default;
   pointer-events: auto;
+}
+
+.masktv{
+  pointer-events: none;
+  top: 0;
+  background-image: url("src/assets/masktv2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }

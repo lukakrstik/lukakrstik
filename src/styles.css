@@ -11,6 +11,11 @@
   src: url("/assets/european_teletext/EuropeanTeletextNuevo.ttf");
 }
 
+@font-face {
+  font-family: TeleHead;
+  src: url("/assets/european_teletext/pixelpro-2p.ttf");
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -325,7 +330,6 @@ body {
 .gradRGB {
   background-blend-mode: screen;
   background: url("assets/bgnewG.gif"), url('assets/bgnew.png');
-  backdrop-filter: saturate(55%);
   background-size: cover;
   background-clip: content-box;
   background-repeat: no-repeat,no-repeat;
@@ -382,4 +386,16 @@ body{
   font-family: 'Rondo';
   text-decoration: none;
   letter-spacing: 6px;
+}
+
+.teletext{
+  font-family: 'Teletext', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.telehead{
+  font-family: 'Telehead', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
 }

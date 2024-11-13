@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import { Image } from '../../image';
 import { IMAGES } from "../images";
 import {Router, RouterModule} from "@angular/router";
@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   private programInterval: any;
   private channelInterval: any;
   public text: string[] = [];
-  public programArray: string[] = ["PROGRAM", "P^/GA!-", ">R!/RAM", ">!->#>A/","!!O>#$>"]
+  public programArray: string[] = ["CHA%%EL GUIDE", "CH^NNEL GU/DE", "CHNNNEL GUIOE", "CHANNEL GVIDE","CHANNEL GUIDE"]
   public program: string = ""
   hover(ch: string, asset: string, text: string){
     console.log("in")
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit() {
-    this.program = "PROGRAM"
+    this.program = "CHANNEL GUIDE"
     let i = 0;
     this.programInterval = setInterval(() => {
       this.program = this.programArray[i%this.programArray.length]
