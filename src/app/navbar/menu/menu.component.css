@@ -1,0 +1,25 @@
+.menu:nth-child(even) {
+  background-color: #171717;
+}
+
+.menu:nth-child(odd) {
+  background-color: #212121;
+}
+
+.menu:hover {
+  border-radius: 5rem !important;
+  color: #ff5b5b;
+  transition: all 0.2s ease-in;
+}
+
+.menu {
+  margin-bottom: 0 !important;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  transition: all 0.2s ease-out;
+  width: 300px;
+}
+
+.backColor {
+
+}

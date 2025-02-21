@@ -1,33 +1,103 @@
-<!--Contact Info-->
-<app-navbar></app-navbar>
-<div class="container mt-1 flex-lg-shrink-1" style="width: 90%; position: relative;">
+<div class="absolute bg-krstic w-full h-[50px]"></div>
+<app-navbar class="z-20 sticky"></app-navbar>
+<div (mousemove)="gradShift($event)">
+<div #gradient id="gradient-container" class="w-full h-[85vh] flex flex-col md:flex-row relative">
+  <div id="gradient-overlay"></div>
+  <div class="flex flex-col justify-start basis-1/2 p-8 z-10">
+    <img src="../../assets/PPOlyBW.jpg" alt="Profile Picture" class="w-[55%] lg:w-[40%]">
+  </div>
+  <div class="flex flex-col justify-end basis-1/2 pb-16 z-10">
+    <p class="text-lg md:text-xl w-100 xl:w-[35vw] p-2 pMain">A {{age}} year old photographer
+      and developer from Macedonia, studying at the Faculty of Computer Science & Engineering in Skopje.
+      Currently working on numerous small projects, as well as diving into the world of abstract photography.
+    </p>
+  </div>
+</div>
+  <div class="w-full sm:text-sm hook bg-[#171717] text-[#f6f6f6] flex justify-center">
+    <div class="flex flex-col justify-center w-full">
+      <div class="flex justify-evenly flex-col md:flex-row w-full">
+        <h5 class="basis-1/3 mb-0 text-center ">Skills</h5>
+        <h5 class="basis-1/8 mb-0 text-center">&</h5>
+        <h5 class="basis-1/3 mb-0 text-center">Education</h5>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row w-full h-auto md:h-max-[35vh]">
+    <div class="basis-1/2 flex flex-col bg-krstic text-krstic text-md md:text-xl min-h-[500px] border-b-2 md:border-b-0 border-r-0 md:border-r-2 border-krstic">
+      <div class="basis-2/5 flex flex-grow">
+        <div class="basis-1/2 flex flex-col justify-center mx-auto text-center skill border-r-2 border-krstic bg-[#d6f68c]">Angular</div>
+        <div class="basis-1/2 flex flex-col justify-center mx-auto text-center skill bg-[#f7fde8]">Photography</div>
+      </div>
+      <div class="basis-1/5 flex flex-grow">
+        <div class="basis-1/2 flex flex-col justify-center mx-auto text-center skill border-r-2 border-t-2 border-krstic bg-[#f3fcdd]">React</div>
+        <div class="basis-1/2 flex flex-col justify-center mx-auto text-center skill border-t-2 border-krstic bg-[#d6f68c]">Figma</div>
+      </div>
+      <div class="basis-2/5 flex flex-grow">
+        <div class="basis-1/4 flex flex-col justify-center">
+          <div class="h-full w-full flex flex-col justify-center mx-auto text-center skill border-t-2 border-r-2 border-krstic bg-[#d6f68c]">Java</div>
+        </div>
+        <div class="basis-1/4 flex flex-col justify-center">
+          <div class="h-full w-full flex flex-col justify-center mx-auto text-center skill border-t-2 border-r-2 border-krstic bg-[#def8a3]">C#</div>
+        </div>
+        <div class="basis-1/4 flex flex-col justify-center">
+          <div class="h-full w-full flex flex-col justify-center mx-auto text-center skill border-t-2 border-r-2 border-krstic bg-[#e6faba]">Python</div>
+        </div>
+        <div class="basis-1/4 flex flex-col justify-center">
+          <div class="w-full basis-1/3 flex flex-col justify-center mx-auto text-center skill border-t-2 border-krstic bg-[#effbd1]">HTML</div>
+          <div class="w-full basis-1/3 flex flex-col justify-center mx-auto text-center skill border-t-2 border-krstic bg-[#f3fcdd]">CSS</div>
+          <div class="w-full basis-1/3 flex flex-col justify-center mx-auto text-center skill border-t-2 border-krstic bg-[#f7fde8]">JavaScript</div>
+        </div>
+      </div>
+    </div>
+    <div class="basis-1/2 min-h-[500px] flex flex-col justify-center">
+      <div class="flex justify-center">
+        <div class="w-[35px]">
+          <div class="w-[35px] h-[35px] bg-krstic rounded-full mb-2"></div>
+          <div class="flex justify-center w-full">
+            <div class="w-[8px] h-[250px] bg-krstic rounded-full"></div>
+          </div>
+          <div class="w-[35px] h-[35px] bg-krstic rounded-full mt-2"></div>
+        </div>
+        <div class="h-[380px] basis-[75%] md:basis-1/2 ml-4 flex flex-col justify-between">
+          <div>
+            <h3 class="leading-tight mb-0">SUGS GEORGI DIMITROV</h3>
+            <h6 class="text-[#666666] text-sm">JUN 2021</h6>
+          </div>
+          <div>
+            <h3 class="leading-tight mb-0">FACULTY OF COMPUTER SCIENCE AND ENGINEERING</h3>
+            <h6 class="text-[#666666] text-sm">JAN 2026</h6>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="frosted my-16 mx-auto px-0 user-select-none">
-    <img src="../../assets/Pfp.jpg" style="width: 8rem; height: auto; border-radius: 50%; box-shadow: 0.2rem 0.2rem 0.2rem rgba(21,21,21,0.1);" class="row h100 mx-auto mb-4 mt-1">
-    <div class="row">
-      <h3 class="header-info-italic text-center mx-auto">Luka Krstikj</h3>
+  </div>
+  <div class="w-full hook bg-bitterRed text-[#f6f6f6] flex justify-center">
+    <div class="flex flex-col justify-center w-full">
+      <div class="flex justify-evenly flex-row w-full h-full">
+        <div class="basis-1/2 p-4 w-full h-full actionBtn bg-krstic flex flex-col justify-center text-center" routerLinkActive="active" routerLink="/dev">
+          <h1 class="mb-0">DEV</h1>
+        </div>
+        <div class="basis-1/2 p-4 w-full h-full actionBtn bg-krstic flex flex-col justify-center text-center" routerLinkActive="active" routerLink="/art">
+          <h1 class="mb-0">ART</h1>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <h5 class="header-info-italic text-center mx-auto w-75 mt-3">A {{age}} year old photographer
-        and developer from Macedonia, currently studying at the Faculty of Computer Science & Engineering in Skopje.
-      Currently working on numerous small projects, as well as diving into the world of abstract photography.</h5>
+  </div>
+  <div class="w-full flex flex-col md:flex-row">
+    <div class="md:basis-1/2 text-9xl h-[250px] overflow-hidden bg-[#f3fcdd] border-b-2 md:border-b-0 border-r-0 md:border-r-2 border-krstic">
+      <p class="relative top-[30%] pBrutal">CONTACT<br> CONTACT</p>
     </div>
-    <div class="row">
-      <h4 class="header-info-b text-center mx-auto mb-3">. . .</h4>
-    </div>
-    <div class="row w-full mx-auto mt-0 mb-0 py-0 bg-white ">
-      <h3 class="header-info-upload text-krstic text-center mx-auto py-2 mt-2">CONTACT</h3>
-    </div>
-    <div class="flex flex-col md:flex-row mt-0 pt-0">
-      <a href="https://www.instagram.com/lukakrstik/" target="_blank" style="text-decoration: none;" class="basis-1/3 border-r-2 border-t-2 border-white py-4 contactBtn">
-        <h5 class="header-info-italic text-center mx-auto mb-0 shrink">Instagram</h5>
-      </a>
-      <a href="https://www.github.com/lukakrstik/" target="_blank" style="text-decoration: none;" class="basis-1/3 border-r-2 border-t-2 border-white py-4 contactBtn">
-        <h5 class="header-info-italic text-center mx-auto mb-0 shrink">GitHub</h5>
-      </a>
-      <a href="mailto:luka.krstik@protonmail.com" target="_blank" style="text-decoration: none;" class="basis-1/3 border-t-2 border-white py-4 contactBtn">
-        <h5 class="header-info-italic text-center mx-auto mb-0">Email</h5>
-      </a>
+    <div class="basis-1/2 flex flex-col md:flex-row p-4 h-[250px] ">
+      <div class="basis-1/2 flex flex-col justify-end select-none">
+        <a href="https://github.com/lukakrstik" class="w-fit"><h4 class="cursor-pointer w-fit">GitHub</h4></a>
+        <a href="https://www.linkedin.com/in/luka-krstikj-176754275/" class="w-fit"><h4 class="cursor-pointer w-fit">LinkedIn</h4></a>
+        <a href="https://instagram.com/lukakrstik" class="w-fit"><h4 class="cursor-pointer w-fit">Instagram</h4></a>
+      </div>
+      <div class="basis-1/2 flex justify-end mt-4">
+        <a href="mailto:luka.krstik@protonmail.com" class="w-fit"><h5 class="text-krstic rounded-full border-2 border-krstic px-3 py-1 w-fit">luka.krstikj@protonmail.com</h5></a>
+      </div>
     </div>
   </div>
 </div>
+<app-footer></app-footer>

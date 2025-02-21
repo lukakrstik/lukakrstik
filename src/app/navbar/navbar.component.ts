@@ -8,11 +8,15 @@ import {Router, RouterModule} from "@angular/router";
 })
 export class NavbarComponent implements OnInit {
   counter: number;
-
+  menuBool: boolean = false;
 
 
   constructor(public router: Router) {
     this.counter = 0
+  }
+
+  showMenu(){
+    this.menuBool = !this.menuBool;
   }
 
   ngOnInit(): void {

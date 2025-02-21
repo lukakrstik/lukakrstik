@@ -1,3 +1,8 @@
+.nav{
+  height: 50px;
+  width: 100vw;
+}
+
 img{
   height: 14px;
   border: solid white 2px;
@@ -6,7 +11,7 @@ img{
 
 .hyperlinkNav{
   transition: color 0.8s;
-  color: #fff;
+  color: #f6f6f6;
   text-decoration: none;
   font-size: 13px;
   width: 70px;
@@ -18,7 +23,7 @@ img{
 .line {
   height: 2px;
   width: 30px;
-  background-color: white;
+  background-color: #f6f6f6;
   align-self: center;
   justify-self: center;
 
@@ -33,8 +38,8 @@ h1 {
 }
 
 .frostedNav{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgb(23, 23, 23, 0.95));
-  backdrop-filter: blur(5px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(23, 23, 23, 0.3));
+  backdrop-filter: blur(10px);
 }
 
 .navLight {
@@ -44,4 +49,106 @@ h1 {
 
 @media only screen and (max-width: 700px) {
 
+}
+
+.Nudica{
+  font-family: nudicamedium;
+}
+
+.buttonPrim{
+  border-radius: 1rem;
+  border: 0.125rem solid #f6f6f6;
+  backdrop-filter: blur(20px);
+  transition: all 300ms ease-out;
+}
+
+.buttonPrim:hover{
+  border-radius: 0.2rem;
+  background-color: #ff5b5b;
+  border: 0.125rem solid #ff7c7c;
+}
+
+.burger{
+  border-radius: 2rem;
+  position: relative;
+  border: solid #f6f6f6 2px;
+  transition: all 0.3s ease-out;
+}
+
+.dot1 {
+  height: 8px;
+  width: 8px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: calc(36% - 4px);
+  left: calc(36% - 4px);
+  transition: all 300ms ease-out;
+}
+
+.dot2 {
+  height: 8px;
+  width: 8px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: calc(64% - 4px);
+  left: calc(50% - 4px);
+  transition: all 300ms ease-out;
+}
+
+.dot3 {
+  height: 8px;
+  width: 8px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: calc(36% - 4px);
+  left: calc(64% - 4px);
+  transition: all 300ms ease-out;
+}
+
+
+
+.burger:hover {
+  border-radius: 0.1rem;
+  background-color: #ff5b5b;
+  transition: all 0.3s ease-out;
+}
+.burger:hover > .dot1 {
+  top: calc(50% - 4px);
+  left: calc(30% - 4px);
+  transition-duration: 0.3s;
+}
+
+.burger:hover > .dot2 {
+  top: calc(50% - 4px);
+  transition-duration: 0.3s;
+}
+
+.burger:hover > .dot3 {
+  top: calc(50% - 4px);
+  left: calc(70% - 4px);
+  transition-duration: 0.3s;
+}
+
+.dot1.clicked {
+  top: calc(64% - 4px);
+  left: calc(36% - 4px);
+  transition: all 300ms ease-out;
+}
+.dot2.clicked {
+  top: calc(36% - 4px);
+  left: calc(50% - 4px);
+}
+.dot3.clicked {
+  top: calc(64% - 4px);
+  left: calc(64% - 4px);
+}
+
+svg {
+  fill: #f6f6f6;
 }

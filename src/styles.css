@@ -16,71 +16,21 @@
   src: url("/assets/european_teletext/pixelpro-2p.ttf");
 }
 
+@font-face {
+  font-family: 'nudicamedium';
+  src: url('assets/Nudica/nudica-medium-webfont.eot');
+  src: url('assets/Nudica/nudica-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/Nudica/nudica-medium-webfont.woff2') format('woff2'),
+  url('assets/Nudica/nudica-medium-webfont.woff') format('woff'),
+  url('assets/Nudica/nudica-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
-}
-
-.header-info {
-  color: #FFF;
-  font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: inherit;
-  text-decoration: none;
-}
-.header-info-italic {
-  color: #FFF;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-
-.card-no-border {
-  border: none;
-}
-
-.visina {
-  height: 20rem;
-  width: auto;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns : repeat(3,1fr);
-  grid-template-rows: repeat(2, 20vw);
-  grid-gap: 10px;
-}
-
-.grid_image {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.card-columns{
-  display: inline-block;
-}
-
-.header-info-b {
-  color: #FFF;
-  font-size: 2.0rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.hyperlink{
-  transition: color 0.8s;
-  color: #171717;
-  text-decoration: none;
-}
-
-.hyperlink:hover {
-  color: #2d966b;
-  text-decoration: none;
-  transition: color 0.4s;
 }
 
 .card-img:hover{
@@ -148,119 +98,6 @@ body {
   opacity: 50%;
   font-size: 1.25rem;
 }
-/* Custom button design */
-.fancybox-button {
-  background: transparent;
-  color: #333;
-}
-
-.fancybox-toolbar .fancybox-button:hover {
-  background: none;
-  color: #2d966b;
-  transition: color 0.4s;
-}
-
-/* Make close button a bit bigger */
-.fancybox-button--close {
-  padding: 7px;
-}
-
-/* Navigation arrows */
-.fancybox-navigation .fancybox-button {
-  z-index: 99996;
-}
-
-.fancybox-navigation .fancybox-button div {
-  padding: 0;
-}
-
-.fancybox-navigation .fancybox-button[disabled],
-.fancybox-navigation .fancybox-button[disabled]:hover {
-  color: #171717;
-}
-
-.fancybox-navigation .fancybox-button:hover {
-  color: #2d966b;
-  transition: color 0.4s;
-}
-
-/* Change backdrop color */
-.fancybox-bg {
-  background: #eee;
-}
-
-/* Initially hide the caption */
-.caption {
-  display: none;
-}
-
-/* Change position and design of caption area */
-.fancybox-caption {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: auto;
-  padding: 0;
-  width: 300px;
-  background: #eee;
-  color: #333;
-  box-shadow: 0 0 20px #888;
-  z-index: 99996;
-  text-align: left;
-
-  /* Hide next to right edge */
-  transform: translate3d(320px, 0, 0);
-}
-
-.fancybox-caption::before {
-  display: none;
-}
-
-.fancybox-caption > div {
-  margin-top: 44px;
-  padding: 20px;
-  max-height: calc(100vh - 44px);
-  overflow: auto;
-}
-
-/* Overwrite the default animation */
-.fancybox-show-caption .fancybox-caption,
-.fancybox-caption {
-  transition: transform .2s;
-}
-
-/* Reveal caption */
-.fancybox-show-caption.fancybox-vertical-caption .fancybox-caption {
-  transform: translate3d(0, 0, 0);
-}
-
-/* Styling of caption content */
-.fancybox-caption a {
-  color: #333;
-}
-
-.fancy-nav a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background: #444;
-  color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  line-height: 18px;
-  text-align: center;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.fancy-nav a:hover {
-  text-decoration: none;
-}
 
 .header-info-albumview {
   color: #171717;
@@ -269,15 +106,6 @@ body {
   font-style: italic;
   font-weight: bold;
   text-decoration: underline;
-}
-
-.carousel-item:before {
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(2px) saturate(150%) contrast(25%) brightness(130%);
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
@@ -360,7 +188,7 @@ body{
   height: max-content;
 }
 .normalBG {
-  background-color: #171717;
+  background-color: #f6f6f6;
 }
 
 .glitchBG {
@@ -398,4 +226,8 @@ body{
   font-family: 'Telehead', sans-serif;
   font-weight: normal;
   text-decoration: none;
+}
+
+.nudica {
+  font-family: 'Nudica', sans-serif;
 }

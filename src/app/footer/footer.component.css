@@ -1,0 +1,9 @@
+p {
+  margin: 0;
+  font-family: "Nudica", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+p:hover{
+  transition: all 0.2s ease-in-out;
+}

@@ -1,3 +1,4 @@
+/*
 .contactBtn:hover {
   background-color: #8cac00;
   transition: background-color 1s;
@@ -7,4 +8,191 @@
   .contactBtn {
     border-right: none;
   }
+}
+
+.masktv{
+  pointer-events: none;
+  top: 0;
+  background-image: url("src/assets/hellyeah2.png"), url("src/assets/masktv.png");
+  background-size: contain, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.CRT::before {
+  mix-blend-mode: hard-light;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0.04) 50%);
+  z-index: 1;
+  background-size: 150% 4px, 10px 150%;
+  pointer-events: none;
+
+}
+
+
+@keyframes blur{
+  0% {
+    filter: blur(0px) saturate(120%);;
+    opacity: 1;
+  }
+  50% {
+    filter: blur(0.2px) saturate(100%);;
+    opacity: 0.85;
+  }
+  100% {
+    filter: blur(0.4px) saturate(200%);
+    opacity: 0.9;
+  }
+}
+
+@keyframes jitter {
+  0% {
+    transform: translateY(1px);
+  }
+  30%{
+    transform: translateX(2px) translateY(0px);
+  }
+  50% {
+    transform: translateX(0px) translateY(1px);
+  }
+  51% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes jitter2 {
+  0% {
+    transform: translateX(1px);
+  }
+  20%{
+    transform: translateX(0px)
+  }
+  50% {
+    transform: translateX(-1px)
+  }
+  51% {
+    transform: translateX(0);
+  }
+}
+.jitter{
+  animation: blur 30ms infinite, jitter 30ms infinite;
+}
+
+.jittertwo{
+  animation: blur 30ms infinite, jitter2 75ms infinite;
+}
+
+.flicker{
+  animation: blur 45ms infinite;
+}
+
+#ch,.ch{
+  filter: blur(0.5px);
+  text-shadow: lime 0 0 0.3rem;
+  opacity: 82%;
+}
+
+.glow{
+  text-shadow: currentColor 0 0 0.1rem;
+  transition: all ease-in-out 300ms
+}*/
+
+
+#gradient-container {
+  background: linear-gradient(90deg,rgba(246,246,246,1) 7%,rgba(214,246,140,1) 10%,rgba(246,246,246,1) 9%,rgba(246,246,246,1) 23%, rgba(214,246,140,1) 20%, rgba(246,246,246,1) 35%, rgba(246,246,246,1) 34%, rgba(214,246,140,1) 36%, rgba(246,246,246,1) 41%, rgba(246,246,246,1) 48%, rgba(214,246,140,1) 50%, rgba(246,246,246,1) 52%, rgba(246,246,246,1) 69%, rgba(214,246,140,1) 73%, rgba(246,246,246,1) 77%);
+  transition: background 2s ease-in-out;
+  background-size: 200% 100%;
+}
+
+#gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/strokesignature.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300% 300%;
+  z-index: 0;
+}
+
+.pMain {
+  background-color: rgba(214,246,140,1);
+  font-family: "Nudica", sans-serif;
+  font-weight: 600;
+}
+
+.pBrutal {
+  font-family: "Nudica", sans-serif;
+  font-weight: 800;
+  word-break: break-all;
+}
+
+.hook  {
+  height: calc(100vh - (50px + 85vh));
+  margin: 0 !important;
+}
+
+h5, h1, h2, h3, h4, h6 {
+  font-family: "Nudica", sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: "Nudica", sans-serif;
+  font-weight: 300;
+}
+
+.skill:hover{
+  border-radius: 0 0 10rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.skill {
+  transition: all 0.2s ease-in-out;
+  font-family: "Nudica", sans-serif;
+  font-weight: 800;
+}
+
+.actionBtn:hover {
+  cursor: pointer;
+  border-radius: 10rem;
+  color: #ff5b5b;
+  transition: all 0.2s ease-in;
+
+}
+
+.actionBtn {
+  transition: all 0.3s ease-out;
+  color: #f6f6f6;
+}
+
+a>h4 {
+  font-weight: 800;
+  color: #171717;
+  transition: all 0.3s ease-out;
+}
+
+a>h4:hover {
+  color: #ff5b5b;
+  transition: all 0.2s ease-in;
+}
+
+a {
+  text-decoration: none !important;
+  transition: all 0.2s ease-out;
+}
+
+a>h5:hover {
+  background-color: #ff5b5b;
+  transition: all 0.2s ease-in;
 }

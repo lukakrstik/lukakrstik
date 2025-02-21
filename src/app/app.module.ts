@@ -13,6 +13,8 @@ import { AnalogComponent } from './gallery/analog/analog.component';
 import { DigitalComponent } from './gallery/digital/digital.component';
 import { DevComponent } from './dev/dev.component';
 import { ExhibitComponent } from './exhibit/exhibit.component';
+import { MenuComponent } from './navbar/menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { ExhibitComponent } from './exhibit/exhibit.component';
     DigitalComponent,
     DevComponent,
     ExhibitComponent,
+    MenuComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

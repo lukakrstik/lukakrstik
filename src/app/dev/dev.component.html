@@ -1,23 +1,56 @@
+<div class="absolute bg-krstic w-full h-[50px]"></div>
 <app-navbar></app-navbar>
-<div class="container-fluid fullpage mx-0 pt-8 titleWdesc">
-  <div class="flex-row flex flex-wrap justify-content-evenly mb-8 px-0 lg:mx-4" *ngFor=" let project of allprojects">
-    <div class="flex flex-column justify-content-center mb-4 basis-full lg:basis-1/2 pr-2 shrink-0 grow-0 flex-wrap">
-      <div class="flex flex-row flex-wrap border-2 border-white w-fit">
-        <div>
-          <h2 class="flex flex-column justify-content-center w-fit text-white pt-2 px-2">{{project.name}}</h2>
-        </div>
-        <div class="bg-white flex flex-column justify-content-center">
-          <h3 class="text-krstic w-fit px-2 text-center align-self-center pt-2">{{project.date}}</h3>
-        </div>
-      </div>
-      <h5 class="text-white text-wrap my-4 w-full lg:w-50">{{project.desc}}</h5>
-      <a [href]="project.gitlink" class="text-decoration-none text-krstic">
-      <div class="flex flex-row w-fit h-[44px]">
-        <h4 class="bg-white h-full px-2 pt-[9px]">Github</h4>
-        <div class="h-[44px] w-[44px] border-2 border-white border-l-0"><img src="assets/github.png" class=""></div>
-      </div>
-      </a>
+<div class="overflow-hidden z-0 bg-dewLL h-[80vh] border-b-4 border-krstic flex flex-col md:flex-row justify-end relative">
+  <div class="top-0 absolute w-full h-[80vh] header z-10"></div>
+  <div class="top-0 absolute w-full h-[80vh] headerLayer z-10"></div>
+  <div class="basis-1/2 flex flex-col justify-end p-8 text-krstic z-50">
+    <div class="flex justify-end">
+      <p class="text-6xl font-bold bg-krsticWhite w-fit p-2">DEV</p>
     </div>
-    <img class="border-2 border-white basis-full lg:basis-1/2 shrink-0 w-auto h-full" [src]="project.img">
+    <div class="flex justify-end">
+      <p class="text-xl p-2 bg-krsticWhite w-fit">Collection of solo projects and team projects from competitions.<br> Main focus on frontend web development.</p>
+    </div>
   </div>
 </div>
+<div class="bg-krstic h-[calc(20vh-50px)] text-krsticWhite text-6xl md:text-8xl text-center p-8 flex flex-col justify-center border-b-2 border-krsticWhite"><p class="mb-0">PROJECTS</p></div>
+<div class=" fullpage mx-0 pr-0 titleWdesc flex flex-col">
+  <div class="projectsContainer flex flex-col flex-wrap lg:flex-row overflow-hidden" *ngFor=" let project of allprojects">
+    <div class="lg:basis-1/2 min-h-[35vh] lg:w-1/2 flex flex-col justify-between select-none">
+        <div class="flex flex-col w-full basis-2/5">
+          <div class="w-full hook bg-bitterRed text-[#f6f6f6] flex justify-center">
+            <div class="flex flex-col justify-center w-full">
+              <div class="flex justify-evenly flex-row w-full h-full">
+                <a class="basis-auto w-full h-full" *ngIf="project.liveLink.length > 0" [href]="project.gitlink"><div  class="basis-auto p-4 w-full h-full actionBtn bg-[#212121] flex flex-col justify-center text-center">
+                  <h5 class="mb-0">GITHUB</h5>
+                </div></a>
+                <a class="basis-auto w-full h-full" *ngIf="project.liveLink.length > 0" [href]="project.liveLink"><div class="basis-auto p-4 w-full h-full actionBtn bg-[#212121] flex flex-col justify-center text-center">
+                  <h5 class="mb-0">WEBSITE</h5>
+                </div></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex w-full justify-end tech mr-4 mt-1">
+            <p *ngIf="project.development" class="animate-pulse border-2 border-dew text-krstic bg-dew rounded-full font-bold px-2 py-1 m-2 h-fit">IN DEVELOPMENT</p>
+            <div class="flex">
+              <p class="border-2 border-dew text-dew rounded-full px-2 py-1 m-2 h-fit" *ngFor=" let technology of project.technologies">
+              {{technology}}
+              </p>
+            </div>
+          </div>
+
+        </div>
+      <div class="basis-3/5 flex flex-col justify-end">
+        <div class="text-dew text-5xl lg:text-8xl relative">
+          <h5 class="px-2 mb-0">{{project.date}}</h5>
+          <p class="mb-0 leading-[0.75] font-bold inline-block align-bottom">{{project.name.toLocaleUpperCase()}}</p>
+        </div>
+        <div class="text-dewLL text-sm">
+          <p class="px-2">{{project.desc}}</p>
+        </div>
+      </div>
+    </div>
+    <video class=" md:basis-1/2 lg:w-1/2 h-auto shrink-0" autoplay loop [src]="project.img"></video>
+  </div>
+</div>
+<app-footer></app-footer>

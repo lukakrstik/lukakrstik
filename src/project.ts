@@ -4,4 +4,7 @@ export interface Project {
   desc: string;
   img: string;
   gitlink: string;
+  liveLink: string;
+  technologies: string[];
+  development: boolean;
 }

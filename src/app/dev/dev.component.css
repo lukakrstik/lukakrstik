@@ -1,7 +1,10 @@
 .titleWdesc {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nudica', sans-serif;
   font-weight: inherit;
   text-decoration: none;
+  background: url("../../assets/project.svg"), #171717;
+  background-repeat: repeat-y;
+  background-size: 300%;
 }
 
 img {
@@ -11,3 +14,52 @@ img {
 a:hover {
   color: #171717;
 }
+
+.projectsContainer:nth-of-type(2n){
+  flex-direction: row-reverse !important;
+  text-align: right;
+}
+.projectsContainer:nth-of-type(2n) .tech{
+  justify-content: flex-start !important;
+}
+
+p {
+  white-space: collapse;
+}
+
+.projectsContainer {
+}
+
+video {
+  object-fit: fill;
+}
+
+
+.actionBtn:hover {
+  cursor: pointer;
+  border-radius: 10rem;
+  color: #ff5b5b;
+  transition: all 0.2s ease-in;
+
+}
+
+.actionBtn {
+  transition: all 0.3s ease-out;
+  color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Nudica', sans-serif;
+}
+
+.header{
+  background: url("../../assets/random.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+

@@ -1,14 +1,16 @@
+<div class="absolute bg-krstic w-full h-[50px]"></div>
 <app-navbar></app-navbar>
 <div class="container-fluid my-3 p-0">
-    <h1 class="header-info-upload text-center text-white w-50 mx-auto user-select-none">All Photos</h1>
+    <h4 class="nudica rounded-full border-2 border-krstic w-fit px-3 py-1 mb-0 text-center text-krstic mx-auto select-none">All Photos</h4>
 
   <div class="gap-0 sm:columns-1 md:columns-2 lg:columns-3">
       <div *ngFor="let image of allphotos" class="user-select-none md:px-2 sm:px-4 py-2" style="border: none; background-color: rgba(255,255,255,0); display: inline-block; height: auto; vertical-align: middle;">
-        <img class="card-img border-2 border-white" [src]="image.tlink" (click)="displayFull(image.olink)" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
+        <img class="card-img border-2 border-krstic" [src]="image.tlink" (click)="displayFull(image.olink)" alt="Error Loading Photo" style="background-color: rgba(255,255,255,0);">
       </div>
   </div>
 
   <div (click)="closeDisplay($event)" id="cover" style="display:none; position:fixed; top:7%; bottom:0; left:0; right:0; background: rgba(23,23,23,0.6); backdrop-filter: blur(15px)">
-    <img style="max-height: 88vh; max-width: 100vw; margin: auto" src="{{linkce}}" class="border-4 border-white">
+    <img style="max-height: 88vh; max-width: 100vw; margin: auto" src="{{linkce}}" class="border-4 border-krstic">
   </div>
 </div>
+<app-footer></app-footer>
