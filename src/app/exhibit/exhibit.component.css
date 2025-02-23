@@ -22,3 +22,173 @@ video{
 
 }
 
+
+.img {
+  height: 2rem;
+}
+.gifContainer{
+  background-image: url("../../assets/ahahah.gif");
+  background-blend-mode: exclusion;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.line {
+  height: 2px;
+  width: 60px;
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.fullpage{
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.titleWdesc {
+  font-family: 'Akira', sans-serif;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+
+.frostedDash{
+  border: solid #171717 2px;
+  width: 120%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 23, 23,0.7));
+  backdrop-filter: blur(10px);
+}
+
+.checkered{
+  background-image:
+    linear-gradient(45deg, #fff 25%, transparent 25%),
+    linear-gradient(135deg, #fff 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #fff 75%),
+    linear-gradient(135deg, transparent 75%, #fff 75%);
+  background-size:25px 25px; /* Must be a square */
+  background-position:0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+}
+
+.navCH > div > h1 {
+  margin: 0;
+}
+.navCH > div:hover {
+  background-color: blue;
+  color: yellow;
+  mix-blend-mode: difference;
+  box-shadow: 0 0 0.3rem 0.15rem blue ;
+  transition: all ease-in-out 300ms
+}
+
+
+.mk{
+  font-size: 0.25rem;
+}
+
+.CRT{
+
+}
+.CRT::before {
+  mix-blend-mode: hard-light;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0.04) 50%);
+  z-index: 1;
+  background-size: 150% 4px, 10px 150%;
+  pointer-events: none;
+
+}
+
+
+@keyframes blur{
+  0% {
+    filter: blur(0px) saturate(120%);;
+    opacity: 1;
+  }
+  50% {
+    filter: blur(0.2px) saturate(100%);;
+    opacity: 0.85;
+  }
+  100% {
+    filter: blur(0.4px) saturate(200%);
+    opacity: 0.9;
+  }
+}
+
+@keyframes jitter {
+  0% {
+    transform: translateY(1px);
+  }
+  30%{
+    transform: translateX(2px) translateY(0px);
+  }
+  50% {
+    transform: translateX(0px) translateY(1px);
+  }
+  51% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes jitter2 {
+  0% {
+    transform: translateX(1px);
+  }
+  20%{
+    transform: translateX(0px)
+  }
+  50% {
+    transform: translateX(-1px)
+  }
+  51% {
+    transform: translateX(0);
+  }
+}
+.jitter{
+  animation: blur 30ms infinite, jitter 30ms infinite;
+}
+
+.jittertwo{
+  animation: blur 30ms infinite, jitter2 75ms infinite;
+}
+
+.flicker{
+  animation: blur 45ms infinite;
+}
+
+#ch,.ch{
+  filter: blur(0.5px);
+  text-shadow: lime 0 0 0.3rem;
+  opacity: 82%;
+}
+
+.glow{
+  text-shadow: currentColor 0 0 0.1rem;
+  transition: all ease-in-out 300ms
+}
+
+#tv{
+  aspect-ratio: 1/1.04;
+  object-fit: fill;
+}
+
+.navCH{
+  cursor: url("src/assets/cursor32.png") default;
+  pointer-events: auto;
+}
+
+.masktv{
+  pointer-events: none;
+  top: 0;
+  background-image: url("src/assets/masktv2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}

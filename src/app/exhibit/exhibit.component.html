@@ -65,3 +65,74 @@
 </div>
 </div>
 -->
+
+
+
+HOME
+
+<div class="lg: h-[100vh] overflow-hidden flex flex-col CRT select-none">
+  <div class="teletext w-full text  flex justify-end h-[25px]">
+    <div class="h-[25px] w-max checkered flex-1"></div>
+    <div class="h-[25px] bg-white text-black flex flex-col justify-center">
+      <h1 class="text-sm h-fit m-0 px-2" id="clock">00:00:00</h1>
+    </div>
+    <div class="h-[25px] bg-white text-black flex flex-col justify-center">
+      <h1 class="text-sm h-fit m-0 px-2">v[3.03]</h1>
+    </div>
+  </div>
+  <div class="titleWdesc text-white flex justify-between bg-[blue]">
+    <img src="assets/logoLK.svg" class="w-[55%] md:w-[20%] pt-2 mb-0 pl-2">
+    <div class="flex flicker">
+      <div class="w-[12px] md:w-[30px] bg-[gray]"></div>
+      <div class="w-[12px] md:w-[30px] bg-[yellow]"></div>
+      <div class="w-[12px] md:w-[30px] bg-[cyan]"></div>
+      <div class="w-[12px] md:w-[30px] bg-[limegreen]"></div>
+      <div class="w-[12px] md:w-[30px] bg-[magenta]"></div>
+      <div class="w-[12px] md:w-[30px] bg-[red]"></div>
+      <div class="w-[12px] md:w-[30px] bg-[blue]"></div>
+    </div>
+  </div>
+  <div class="flex-1 mx-0 pt-0 flex flex-col lg:flex-row-reverse wrap-1 justify-evenly teletext lg:overflow-hidden jittertwo">
+    <div class="lg:basis-1/2 flex flex-col justify-center lg:px-32 text-white glow">
+      <h1 class="bg-[limegreen] text-krstic w-full text-center mb-4 leading-tight md:leading-none glow telehead pt-2 text-5xl shadow-md shadow-[limegreen]">
+        {{this.program}}
+      </h1>
+      <div class="flex flex-col justify-center w-full lg:w-75 px-0 navCH">
+        <div routerLinkActive="active" routerLink="/dev" (mouseover)="hover('1', 'FDev.mp4','<Projects> /// <Apps>')" class="flex justify-between">
+          <h1 class="text-[yellow]">Dev</h1>
+          <h1>1</h1>
+        </div>
+        <div routerLinkActive="active" routerLink="/art" (mouseover)="hover('2', 'ahahah.mp4','Photos *** Visuals')" class="flex justify-between">
+          <h1 class="text-[yellow]">Art</h1>
+          <h1>2</h1>
+        </div>
+        <div (mouseover)="hover('934', 'konj.mp4','NO FURTHERFURTHERFURTHER INFORMATION')" class="flex justify-between">
+          <h1 class="text-[yellow]">???</h1>
+          <h1>934</h1>
+        </div>
+        <div routerLinkActive="active" routerLink="/about-me" (mouseover)="hover('10', 'Gsynth.mp4','About-Me &&& 07@Contact.com')" class="flex justify-between">
+          <h1 class="text-[yellow]">About Me</h1>
+          <h1>10</h1>
+        </div>
+      </div>
+      <h1 class="text-[1.2rem] bg-[magenta] shadow-md shadow-[magenta] text-white text-center mt-4 w-full lg:w-75">The world is yours.</h1>
+    </div>
+
+    <div class="text-white lg:basis-1/2 flex flex-col justify-center flicker relative">
+      <video playsinline autoplay muted loop poster="assets/ezgif.com-optimize-2.gif" class="" id="tv">
+        <source src="assets/homeN.mp4" type="video/mp4">
+      </video>
+      <h1 id="ch" class="text-[limegreen] w-fit absolute text-2xl lg:text-5xl right-10 top-10 hidden"></h1>
+      <div class="absolute text-center jitter ch">
+        <h1 class="bg-black text-[limegreen] w-fit text-2xl lg:text-4xl">{{this.text[0]}}</h1>
+        <h1 class="bg-black text-[limegreen] w-fit text-2xl lg:text-4xl">{{this.text[1]}}</h1>
+        <h1 class="bg-black text-[limegreen] w-fit text-2xl lg:text-4xl">{{this.text[2]}}</h1>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="nBG teletext text-center flex flex-col justify-center pt-2 CRT">
+  <h5>© 2024 Luka Krstikj</h5>
+</div>
