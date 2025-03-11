@@ -1,66 +1,94 @@
-<div class="lg: h-[100vh] overflow-hidden flex flex-col CRT select-none">
-    <div class="teletext w-full text  flex justify-end h-[25px]">
-      <div class="h-[25px] w-max checkered flex-1"></div>
-      <div class="h-[25px] bg-white text-black flex flex-col justify-center">
-        <h1 class="text-sm h-fit m-0 px-2" id="clock">00:00:00</h1>
-      </div>
-      <div class="h-[25px] bg-white text-black flex flex-col justify-center">
-        <h1 class="text-sm h-fit m-0 px-2">v[3.03]</h1>
-      </div>
+<div class="absolute bg-krstic w-full h-[50px]"></div>
+<app-navbar class="z-20 sticky"></app-navbar>
+<div (mousemove)="gradShift($event)">
+<div class="nudica">
+  <div class="h-[calc(100dvh-50px-13vh)] overflow-hidden relative" #gradient id="gradient-container">
+    <div class="absolute z-0 top-[-80%] left-[-30%]">
+        <svg width="900%" height="900%" viewBox="0 0 804 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style=" fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+          <g transform="matrix(1,0,0,1,2,-44.0818)">
+            <g transform="matrix(3.77886,0,0,3.77886,-141.436,-1561.73)">
+                <path #path [attr.d]="pathData" style="fill:none;fill-rule:nonzero;stroke:#171717;stroke-width:1.06px;"/>
+            </g>
+          </g>
+        </svg>
     </div>
-    <div class="titleWdesc text-white flex justify-between bg-[blue]">
-      <img src="assets/logoLK.svg" class="w-[55%] md:w-[20%] pt-2 mb-0 pl-2">
-      <div class="flex flicker">
-        <div class="w-[12px] md:w-[30px] bg-[gray]"></div>
-        <div class="w-[12px] md:w-[30px] bg-[yellow]"></div>
-        <div class="w-[12px] md:w-[30px] bg-[cyan]"></div>
-        <div class="w-[12px] md:w-[30px] bg-[limegreen]"></div>
-        <div class="w-[12px] md:w-[30px] bg-[magenta]"></div>
-        <div class="w-[12px] md:w-[30px] bg-[red]"></div>
-        <div class="w-[12px] md:w-[30px] bg-[blue]"></div>
-      </div>
-    </div>
-    <div class="flex-1 mx-0 pt-0 flex flex-col lg:flex-row-reverse wrap-1 justify-evenly teletext lg:overflow-hidden jittertwo">
-      <div class="lg:basis-1/2 flex flex-col justify-center lg:px-32 text-white glow">
-        <h1 class="bg-[limegreen] text-krstic w-full text-center mb-4 leading-tight md:leading-none glow telehead pt-2 text-5xl shadow-md shadow-[limegreen]">
-          {{this.program}}
-      </h1>
-          <div class="flex flex-col justify-center w-full lg:w-75 px-0 navCH">
-            <div routerLinkActive="active" routerLink="/dev" (mouseover)="hover('1', 'FDev.mp4','<Projects> /// <Apps>')" class="flex justify-between">
-              <h1 class="text-[yellow]">Dev</h1>
-              <h1>1</h1>
-            </div>
-            <div routerLinkActive="active" routerLink="/art" (mouseover)="hover('2', 'ahahah.mp4','Photos *** Visuals')" class="flex justify-between">
-              <h1 class="text-[yellow]">Art</h1>
-              <h1>2</h1>
-            </div>
-            <div (mouseover)="hover('934', 'konj.mp4','NO FURTHERFURTHERFURTHER INFORMATION')" class="flex justify-between">
-              <h1 class="text-[yellow]">???</h1>
-              <h1>934</h1>
-            </div>
-            <div routerLinkActive="active" routerLink="/about-me" (mouseover)="hover('10', 'Gsynth.mp4','About-Me &&& 07@Contact.com')" class="flex justify-between">
-              <h1 class="text-[yellow]">About Me</h1>
-              <h1>10</h1>
-            </div>
-          </div>
-          <h1 class="text-[1.2rem] bg-[magenta] shadow-md shadow-[magenta] text-white text-center mt-4 w-full lg:w-75">The world is yours.</h1>
-      </div>
-
-      <div class="text-white lg:basis-1/2 flex flex-col justify-center flicker relative">
-        <video playsinline autoplay muted loop poster="assets/ezgif.com-optimize-2.gif" class="" id="tv">
-          <source src="assets/homeN.mp4" type="video/mp4">
-        </video>
-        <h1 id="ch" class="text-[limegreen] w-fit absolute text-2xl lg:text-5xl right-10 top-10 hidden"></h1>
-        <div class="absolute text-center jitter ch">
-          <h1 class="bg-black text-[limegreen] w-fit text-2xl lg:text-4xl">{{this.text[0]}}</h1>
-          <h1 class="bg-black text-[limegreen] w-fit text-2xl lg:text-4xl">{{this.text[1]}}</h1>
-          <h1 class="bg-black text-[limegreen] w-fit text-2xl lg:text-4xl">{{this.text[2]}}</h1>
+    <div class="h-full flex flex-col-reverse lg:flex-row w-full">
+      <div class="basis-1/2 flex flex-col justify-center p-8 z-10">
+        <h1 class="font-bold text-6xl w-fit bg-krsticWhite p-1">Luka Krstikj</h1>
+        <h5 class="text-xl bg-krsticWhite w-fit p-1">Student, Developer and Photographer from Skopje.</h5>
+        <div class="mt-2">
+          <h5 routerLinkActive="active" routerLink="/about-me" class="cursor-pointer btnRound text-krstic rounded-full border-2 border-krstic px-6 font-bold py-2 w-fit">More About Me</h5>
         </div>
-
       </div>
-
     </div>
   </div>
-  <div class="nBG teletext text-center flex flex-col justify-center pt-2 CRT">
-    <h5>© 2024 Luka Krstikj</h5>
+  <div class="h-[13vh] w-full bg-krstic text-center flex text-krsticWhite">
+    <div class="basis-1/2 h-full flex flex-col justify-center">
+      <p class="text-5xl mb-0 font-bold mt-3">{{ this.photography }}</p>
+      <p class="text-xl opacity-75">Years of photography</p>
+    </div>
+    <div class="basis-1/2 h-full flex flex-col justify-center">
+      <p class="text-5xl mb-0 font-bold mt-3">{{ this.projects.length }}+</p>
+      <p class="text-xl opacity-75">Projects</p>
+    </div>
   </div>
+
+  <div class="h-auto lg:h-[70vh]  border-b-2 border-krstic flex flex-col-reverse lg:flex-row">
+    <div class="basis-1/2 h-[calc(70vh)] border-r-0 lg:border-r-2 border-krstic relative overflow-hidden flex-col flex justify-evenly bgDev p-2">
+        <div *ngFor="let project of this.projects" [classList]="project.desc.length > 110  ? 'p-8 flex justify-end leading-0' : 'p-8 flex justify-between leading-0'">
+          <h1 class="font-bold w-fit bg-krstic text-krsticWhite p-3 px-16">{{project.name.toLocaleUpperCase()}}</h1>
+        </div>
+    </div>
+    <div class="basis-1/2 flex flex-col justify-end">
+      <div class="h-[calc(70vh-80px)] flex flex-col justify-around p-8">
+        <h1 class="text-6xl font-bold mb-8">Dev</h1>
+        <h6>
+          Specializing in front-end web development. Striving to design and build interactive,
+          user-friendly experiences that blend functionality with aesthetics.
+          Passionate about crafting clean, efficient and modern interfaces that enhance usability and engagement.
+          Exploring the balance between technical performance and visual
+          storytelling to create seamless digital experiences.
+        </h6>
+      </div>
+      <div class=" h-[80px] w-full  text-center bg-bitterRed">
+        <div class="flex flex-col justify-center h-full w-full bg-krstic actionBtn" routerLink="/dev" routerLinkActive="active" fragment="projects">
+          <p class="text-3xl mb-0">VIEW PROJECTS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-auto lg:h-[70vh]  border-b-2 border-krstic flex flex-col lg:flex-row">
+    <div class="basis-1/2 border-b-2 lg:border-b-0 border-r-0 lg:border-r-2 border-krstic flex flex-col justify-end">
+      <div class="h-[calc(70vh-80px)] flex flex-col justify-around p-8">
+        <h1 class="text-6xl font-bold mb-8">Art</h1>
+        <h6>Photography and Video Synthesizer experience. Photographing for {{this.photography}} years and more.
+          Experimenting with abstract forms of creating art trough photographic and video mediums. Mostly centered around
+          urban and landscape photography with melancholic and bittersweet feelings of storytelling.
+          Currently investing time in doing full-spectrum photography.
+
+
+        </h6>
+      </div>
+
+      <div class=" h-[80px] w-full  text-center bg-bitterRed">
+        <div class="flex flex-col justify-center h-full w-full bg-krstic actionBtn" routerLink="/art" routerLinkActive="active">
+          <p class="text-3xl mb-0">VIEW ART</p>
+        </div>
+      </div>
+    </div>
+    <div class="basis-1/2 min-h-[240px] h-[70vh] bgArt">
+    </div>
+  </div>
+  <div [class.bg-dewLL]="this.contactBool" class="h-[200px] bg-dew contactAnim text-4xl overflow-hidden flex flex-col md:flex-row">
+    <div class="flex w-full h-full justify-center text-center text-krstic relative">
+      <div class="flex flex-col justify-center absolute z-10 h-full" routerLink="/about-me" routerLinkActive="active" fragment="contact">
+        <p (mouseenter)="toggleContact()" (mouseleave)="toggleContact()" class="contactAnim mb-0 h-fit w-fit px-16 py-4 border-2 bg-krsticWhite hover:bg-bitterRed border-krstic rounded-full cursor-pointer select-none leading-none">CONTACT</p>
+      </div>
+      <div class="relative z-0">
+        <div class="h-full w-[2px] bg-krstic absolute left-[calc(50%-2px)]"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

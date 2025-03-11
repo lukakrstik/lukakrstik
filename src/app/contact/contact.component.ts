@@ -36,6 +36,6 @@ export class ContactComponent implements OnInit {
 
       // Smoothly animate the background position
       element.style.backgroundPosition = gradientPosition;
-    }, 400)
+    }, 200)
   }
 }

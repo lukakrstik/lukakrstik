@@ -2,8 +2,7 @@
   font-family: 'Nudica', sans-serif;
   font-weight: inherit;
   text-decoration: none;
-  background: url("../../assets/project.svg"), #171717;
-  background-repeat: repeat-y;
+  background: #171717 url("../../assets/project.svg") repeat-y;
   background-size: 300%;
 }
 
