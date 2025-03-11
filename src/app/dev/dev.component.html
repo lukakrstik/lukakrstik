@@ -1,8 +1,8 @@
 <div class="absolute bg-krstic w-full h-[50px]"></div>
 <app-navbar></app-navbar>
-<div class="overflow-hidden z-0 bg-dewLL h-[80vh] border-b-4 border-krstic flex flex-col md:flex-row justify-end relative">
-  <div class="top-0 absolute w-full h-[80vh] header z-10"></div>
-  <div class="top-0 absolute w-full h-[80vh] headerLayer z-10"></div>
+<div class="overflow-hidden z-0 bg-dewLL h-[calc(100dvh-50px-13vh)] border-b-4 border-krstic flex flex-col md:flex-row justify-end relative">
+  <div class="top-0 absolute w-full h-[calc(100dvh-50px-13vh)] header z-10"></div>
+  <div class="top-0 absolute w-full h-[calc(100dvh-50px-13vh)] headerLayer z-10"></div>
   <div class="basis-1/2 flex flex-col justify-end p-8 text-krstic z-50">
     <div class="flex justify-end">
       <p class="text-6xl font-bold bg-krsticWhite w-fit p-2">DEV</p>
@@ -12,7 +12,7 @@
     </div>
   </div>
 </div>
-<div class="bg-krstic h-[calc(20vh-50px)] text-krsticWhite text-4xl md:text-6xl text-center p-8 flex flex-col justify-center"><p class="mb-0">PROJECTS</p></div>
+<div class="bg-krstic h-[13vh] text-krsticWhite text-4xl md:text-6xl text-center p-8 flex flex-col justify-center"><p class="mb-0">PROJECTS</p></div>
 <div class=" fullpage mx-0 pr-0 titleWdesc flex flex-col">
   <div class="projectsContainer flex flex-col flex-wrap lg:flex-row overflow-hidden" *ngFor=" let project of allprojects">
     <div class="lg:basis-1/2 min-h-[35vh] lg:w-1/2 flex flex-col justify-between select-none">
